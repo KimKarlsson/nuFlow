@@ -155,8 +155,54 @@ nav {
 }
 
 
-
-
+/*
+=============================================
+MOBILENAV
+=============================================
+*/
+.navbar-menu-mobile {
+  display: none;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.navbar-menu-mobile div {
+  display: none;
+}
+.navbar-menu-mobile button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-indent: 200%;
+  overflow: hidden;
+  background: rgba(255,255,255,0.8) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-size: 80%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  -webkit-transition: all 400ms ease;
+          transition: all 400ms ease;
+}
+.button.expanded {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: transparent;
+  border: 0;
+}
+.navbar-menu-mobile a {
+  display: block;
+}
+@media (max-width: 480px) {
+  .navbar-menu-mobile {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+}
 /*  
 =============================================
 SECTIONS  

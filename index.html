@@ -35,40 +35,58 @@
     <!-- STANDARD CSS -->
     <link href="css/form.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
-    
+
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-    <!-- SCREENS <= 480px
+    <!-- SCREENS <= 480px -->
     <link href="../css/smartphone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
- -->
+
 
 </head>
 
 <body>
+    <!--MOBILE NAV STARTS HERE -->
+    <nav class="navbar-menu-mobile">
+        <div>
+            <ul>
+                <button>Toggle</button>
+                <li><a id="home" class="active" href="index.html">START</a></li>
+                <li><a id="about" href="pages/about.html">OM</a></li>
+                <li><a id="customers" href="pages/customers.html">REFERENSER</a></li>
+                <li><a id="products" href="pages/products.html">PRODUKTER</a>
+                    <ul class="dropdown">
+                        <li><a href="pages/pipes/budget.html">Budget</a></li>
+                        <li><a href="pages/pipes/standard.html">Standard</a></li>
+                        <li><a href="pages/pipes/deluxe.html">DeLuxe</a></li>
+                        <li><a href="pages/pipes/superdeluxe.html">Super DeLuxe</a></li>
+                    </ul>
+                </li>
+                <li><a id "contact" href="pages/contact.html">KONTAKT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--MOBILE NAV ENDS HERE -->
     <nav class="navbar">
-        <div class="container">
-            <!--MOBILE NAV -->
-            <!--MOBILE NAV ENDS HERE -->
-            <div>
-                <ul class="navbar-menu-right">
-                    <li><a id="home" class="active" href="index.html">START</a></li>
-                    <li><a id="about" href="pages/about.html">OM</a></li>
-                    <li><a id="customers" href="pages/customers.html">REFERENSER</a></li>
-                    <li><a id="products" href="pages/products.html">PRODUKTER</a>
-                        <ul class="dropdown">
-                            <li><a href="pages/pipes/budget.html">Budget</a></li>
-                            <li><a href="pages/pipes/standard.html">Standard</a></li>
-                            <li><a href="pages/pipes/deluxe.html">DeLuxe</a></li>
-                            <li><a href="pages/pipes/superdeluxe.html">Super DeLuxe</a></li>
-                        </ul>
-                    </li>
-                    <li><a id "contact" href="pages/contact.html">KONTAKT</a></li>
-                </ul>
-            </div>
+        <div>
+            <ul class="navbar-menu-right">
+                <li><a id="home" class="active" href="index.html">START</a></li>
+                <li><a id="about" href="pages/about.html">OM</a></li>
+                <li><a id="customers" href="pages/customers.html">REFERENSER</a></li>
+                <li><a id="products" href="pages/products.html">PRODUKTER</a>
+                    <ul class="dropdown">
+                        <li><a href="pages/pipes/budget.html">Budget</a></li>
+                        <li><a href="pages/pipes/standard.html">Standard</a></li>
+                        <li><a href="pages/pipes/deluxe.html">DeLuxe</a></li>
+                        <li><a href="pages/pipes/superdeluxe.html">Super DeLuxe</a></li>
+                    </ul>
+                </li>
+                <li><a id "contact" href="pages/contact.html">KONTAKT</a></li>
+            </ul>
+        </div>
         </div>
     </nav>
     <!--MAIN SECTION-->

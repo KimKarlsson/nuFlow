@@ -1,3 +1,14 @@
+@media (max-width: 480px) {
+  .container{
+    width: 480px;
+  }
+  .navbar-menu-mobile {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
