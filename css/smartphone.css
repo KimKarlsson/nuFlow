@@ -1,24 +1,135 @@
 @media (max-width: 480px) {
-  .container{
-    width: 480px;
+  body {
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    background-color: #fff;
+    color: #1c1c1c;
+    -webkit-font-smoothing: antialiased !important;
   }
-  .navbar-menu-mobile {
+  header{
+    
+  }
+  .container {
+    width: 100%;
+  }
+  .row,
+  h1 {
+    font-size: 1.2em;
+    text-indent: 5%;
+  }
+  .prod-description {
+    font-family: "Questrial";
+    font-size: 400;
+  }
+  .mobile {
+    width: 100%;
+    /*margin-left: 65%;*/
+    background-color: #FFF;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .mobile ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .mobile li {
+    background-color: #333;
+    position: relative;
     display: block;
+    margin: 0 0px 0px 0;
   }
-  .navbar {
+  .mobile li >ul:first-child {
+    visibility: hidden;
+  }
+  .mobile li a {
+    color: #1c1c1c;
+    text-decoration: none;
+  }
+  .mobile > li > a {
+    font-size: 1.2em;
+    line-height: 24px;
+    padding: 0 15px;
+    text-transform: uppercase;
+  }
+  .mobile > li > a.active,
+  .mobile li a.active {
+    color: #FF450D;
+  }
+  .navigation {
     display: none;
   }
+  .col {
+    margin: 5% 10% 5% 5%;
+    /*top, right, bottom, left*/
+  }
+  .span_1_of_4,
+  .span_2_of_4,
+  .span_3_of_4,
+  .span_4_of_4 {
+    width: 90%;
+  }
+  .img-circle {
+    height: 50%;
+    width: 100%;
+    border-radius: 15%;
+  }
+  button {
+    background: #ff450d;
+    background-image: -webkit-linear-gradient(top, #ff450d, #d9380b);
+    background-image: -moz-linear-gradient(top, #ff450d, #d9380b);
+    background-image: -ms-linear-gradient(top, #ff450d, #d9380b);
+    background-image: -o-linear-gradient(top, #ff450d, #d9380b);
+    background-image: linear-gradient(to bottom, #ff450d, #d9380b);
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    text-shadow: 0px 1px 2px #ffffff;
+    -webkit-box-shadow: 0px 1px 4px #666666;
+    -moz-box-shadow: 0px 1px 4px #666666;
+    box-shadow: 0px 1px 4px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 4px 40px 5px 40px;
+    border: dotted #f03e0c 1px;
+    text-decoration: none;
+  }
+  button:hover {
+    text-decoration: none;
+  }
+  /*
+=============================================
+FOOTER START
+=============================================
+*/
+  footer {
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff;
+    padding: 50px 50px 50px 50px;
+    /*top right bottom left */
+    background-color: #333;
+  }
+  .footer-content {
+    float: right;
+  }
 }
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;

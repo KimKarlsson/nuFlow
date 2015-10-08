@@ -40,88 +40,255 @@
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <!-- SCREENS <= 480px
+    <!-- SCREENS <= 480px  -->
     <link href="../css/smartphone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
- -->
+
 
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <!--MOBILE NAV -->
-            <!--MOBILE NAV ENDS HERE -->
-            <div>
-                <ul class="navbar-menu-right">
-                    <li><a id="home" class="" href="../index.html">START</a></li>
-                    <li><a id="about" class="" href="about.html">OM</a></li>
-                    <li><a id="customers" class="" href="customers.html">REFERENSER</a></li>
-                    <li><a id="proucts" class="active" href="#">PRODUKTER</a>
-                        <ul>
-                            <li><a href="pipes/budget.html">Budget</a></li>
-                            <li><a href="pipes/standard.html">Standard</a></li>
-                            <li><a href="pipes/deluxe.html">DeLuxe</a></li>
-                            <li><a href="pipes/superdeluxe.html">Super DeLuxe</a></li>
-                        </ul>
-                    </li>
-                    <li><a id "contact" href="contact.html">KONTAKT</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--MAIN SECTION-->
-    <div id="main">
-        <section>
-            <div class="container">
-                <div class="section group">
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"> <img class="img-circle" src="http://placehold.it/300x300"></img>
-                        </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle" src="http://placehold.it/300x300"></img>
-                        </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle" src="http://placehold.it/300x300"></img>
-                        </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle" src="http://placehold.it/300x300"></img>
-                        </div>
-                    </div>
+    <header>
+        <div class="row">
+            <div class="logo">
+                <h1>nuFLOW</h1></div>
+            <!--MOBILE NAV STARTS HERE -->
+            <nav class="mobile">
+                <button>MENY</button>
+                <div>
+                    <ul>
+                        <li><a id="home" class="" href="../index.html">START</a></li>
+                        <li><a id="about" class="" href="about.html">OM</a></li>
+                        <li><a id="customers" class="" href="customers.html">REFERENSER</a></li>
+                        <li><a id="products" class="active" href="products.html#">PRODUKTER</a>
+                            <ul class="dropdown">
+                                <li><a href="#budget">Budget</a></li>
+                                <li><a href="#standard">Standard</a></li>
+                                <li><a href="#deluxe">DeLuxe</a></li>
+                                <li><a href="#sdeluxe">Super DeLuxe</a></li>
+                            </ul>
+                        </li>
+                        <li><a id "contact" href="pages/contact.html">KONTAKT</a></li>
+                    </ul>
                 </div>
-                <!-- SECTION GROUP ENDS HERE -->
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <div class="section group">
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"> <img class="img-circle" src="http://placehold.it/300x300"></img>
-                        </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle" src="http://placehold.it/300x300"></img>
-                        </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle" src="http://placehold.it/300x300"></img>
-                        </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle" src="http://placehold.it/300x300"></img>
-                        </div>
-                    </div>
-                </div>
-                <!-- SECTION GROUP ENDS HERE -->
-            </div>
-        </section>
+                <a class="container" href="#">nuFlow</a>
 
+
+            </nav>
+            <!--MOBILE NAV ENDS HERE -->
+
+            <nav class="scrollclass">
+                <div class="navigation">
+                    <ul>
+                        <li><a id="home" class="" href="../index.html">START</a></li>
+                        <li><a id="about" class="" href="about.html">OM</a></li>
+                        <li><a id="customers" class="" href="customers.html">REFERENSER</a></li>
+                        <li><a id="proucts" class="active" href="/">PRODUKTER</a>
+                            <ul>
+                                <li><a href="#budget">Budget</a></li>
+                                <li><a href="#standard">Standard</a></li>
+                                <li><a href="#deluxe">DeLuxe</a></li>
+                                <li><a href="#sdeluxe">Super DeLuxe</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="contact" href="contact.html">KONTAKT</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- NAVBAR ENDS HERE -->
+        </div>
+    </header>
+    <!--MAIN SECTION-->
+    <div id="main-holder">
+        <div class="container">
+            <section id="budget">
+                <div class="container">
+                    <div class="section group">
+                        <div class="row">
+                            <h1>BUDGET</h1></div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"> <img class="img-circle" src="../pics/pipes/budget/3.png"></img>
+                                <div class="prod-descripion">
+                                    <p>Bacon ipsum dolor amet tongue leberkas ham hock, beef ribs capicola chicken tri-tip kevin pig pancetta flank sirloin bresaola ham. Hamburger cupim chuck bacon venison sausage pig. Bacon strip steak filet mignon shankle.
+                                        Shankle shoulder corned beef, boudin turducken pastrami pork chop short loin chicken frankfurter filet mignon kevin doner tenderloin swine.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle" src="../pics/pipes/budget/1.png"></img>
+                                <p>ra1d-ruta2</p>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle" src="../pics/pipes/budget/4.png"></img>
+                                <div class="prod-descripion">
+                                    <div class="prod-descripion">
+                                        <p>ra1d-ruta3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle" src="../pics/pipes/budget/2.png"></img>
+                                <div class="prod-descripion">
+                                    <p>ra1d-ruta4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SECTION GROUP ENDS HERE -->
+                </div>
+                <!-- CONTAINER ENDS HERE -->
+            </section>
+            <!-- SECTION ENDS HERE -->
+
+
+            <section id="standard">
+                <div class="container">
+                    <div class="section group">
+                        <div class="row">
+                            <h1>STANDARD</h1></div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"> <img class="img-circle" src="http://placehold.it/200x200"></img>
+                                <div class="prod-descripion">
+                                    <p>rad1-ruta1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                                <p>rad1-ruta2</p>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                                <div class="prod-descripion">
+                                    <div class="prod-descripion">
+                                        <p>rad1-ruta3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                                <div class="prod-descripion">
+                                    <p>rad1-ruta4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SECTION GROUP ENDS HERE -->
+                </div>
+                <!-- CONTAINER ENDS HERE -->
+            </section>
+            <!-- SECTION ENDS HERE -->
+
+
+            <section id="deluxe">
+                <div class="container">
+                    <div class="section group">
+                        <div class="row">
+                            <h1>deLUXE</h1></div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"> <img class="img-circle" src="http://placehold.it/200x200"></img>
+                                <div class="prod-descripion">
+                                    <p>rad3-ruta1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                                <p>rad3-ruta2</p>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                                <div class="prod-descripion">
+                                    <div class="prod-descripion">
+                                        <p>rad3-ruta3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                                <div class="prod-descripion">
+                                    <p>rad3-ruta4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SECTION GROUP ENDS HERE -->
+                </div>
+                <!-- CONTAINER ENDS HERE -->
+            </section>
+            <!-- SECTION ENDS HERE -->
+
+
+            <section id="sdeluxe">
+                <div class="container">
+                    <div class="row">
+                        <h1>SUPER deLUXE</h1></div>
+                    <div class="section group">
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"> <img class="img-circle" src="http://placehold.it/200x200"></img>
+                                <div class="prod-descripion">
+                                    <p>rad4-ruta1</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <div class="prod-descripion">
+                                    <p>rad4-ruta2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                                <div class="prod-descripion">
+                                    <div class="prod-descripion">
+                                        <p>rad4-ruta3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle" src="../pics/pipes/superdeluxe/sdl-01.jpg"></img>
+                                <div class="prod-descripion">
+                                    <p>rad4-ruta4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SECTION GROUP ENDS HERE -->
+                </div>
+                <!-- CONTAINER ENDS HERE -->
+            </section>
+            <!-- SECTION ENDS HERE -->
+        </div>
     </div>
     <!--MAIN UI ENDS HERE -->
     <footer>
-        <div id="footer-content">&copy 2015 www.nuFlow.com | All Right Reserved </div>
+        <div class="container">
+            <!--SOCIAL SECTION-->
+            <section id="social-section">
+                    <div class="scl">
+                        <h4>FACEBOOK</h4>
+                        <p><a href="#"><i class="fa fa-facebook fa-5x"></i></a></p>
+                    </div>
+                    <div class="scl">
+                        <h4>TWITTER</h4>
+                        <p><a href="#"><i class="fa fa-twitter fa-5x"></i></a></p>
+                    </div>
+                    <div class="scl">
+                        <h4>GOOGLE +</h4>
+                        <p><a href="#"><i class="fa fa-google-plus fa-5x"></i></a></p>
+                    </div>
+
+            </section>
+            <!--END SOCIAL SECTION-->
+            <div id="footer-content">&copy 2015 www.nuFlow.com | All Right Reserved </div>
+        </div>
     </footer>
     <!-- FOOTER ENDS HERE -->
     <script type="text/javascript " src="../js/custom.js "></script>

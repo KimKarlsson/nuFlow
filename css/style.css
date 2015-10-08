@@ -36,24 +36,46 @@ STANDARD STYLING STARTS HERE
 */
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    width: 100%;
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
     margin: 0;
-    background-color: #fff;
-    color: #1c1c1c;
+    /*color: #1c1c1c;*/
     -webkit-font-smoothing: antialiased !important;
 }
 
-.container {
+header {
+    padding: 20px 0 5px 0;
+    /* TOP, RIGHT, BOTTOM, LEFT */
+    background-color: #333;
+    border-bottom: 1px solid #333;
+}
+
+.logo > h1 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #FFF;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-bottom: 8px;
+    width: 85%;
+}
+
+.container {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
 }
 
 p {
-    font-weight: 300;
+    font-weight: 400;
     line-height: 30px;
     padding-bottom: 20px;
 }
@@ -66,13 +88,59 @@ p {
     padding-bottom: 40px;
 }
 
+
+/*
+==========================================
+CAROUSELL
+==========================================
+*/
+
 #main-ui {
+    padding: 0 0 200px 0;
+    /* TOP, RIGHT, BOTTOM, LEFT */
+    background-color: #333;
+    border-bottom: 1px solid #333;
     width: 100%;
-    background-color: #FFF;
-    margin: auto;
+    margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+
+.carousell {
+    height: 100%;
+}
+
+.fadein {
+    position: absolute;
+    width: 75%;
+    height: 35%;
+}
+
+.fadein img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.text-scroll {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: "Questrial";
+    font-size: 1.0em;
+    font-variant: ;
+    width: 150px;
+}
+
+
+/*
+=============================================
+LOGO START
+=============================================
+*/
+
+#main-holder {
+    margin-right: auto;
+    margin-left: auto;
+    /* TOP, RIGHT, BOTTOM, LEFT */
 }
 
 
@@ -82,76 +150,155 @@ NAVIGATION START
 =============================================
 */
 
+
+/*
+#box {
+    background: #f4f4f4;
+    border: 1px solid #bbbbbb;
+    width: 200px;
+    height: 200px;
+    margin: 60px auto;
+    position: relative;
+}
+
+#box:before {
+    border: 1px solid white;
+    content: '';
+    width: 198px;
+    height: 198px;
+    position: absolute;
+}
+
+#box:after {
+    content: '';
+    position: absolute;
+    width: 196px;
+    height: 196px;
+    border: 1px solid #bbbbbb;
+    left: 1px;
+    top: 1px;
+}
+*/
+
 nav {
-    font-weight: bold;
-    border-bottom: 15px solid #666;
     width: 100%;
-    padding: 20px 50px 20px 50px;
-    /*top right bottom left */
-    background-color: #1c1c1c;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    background-image: url(/css/pics/textures/bg_header.png);
+    /*border-top: 1px solid #666;*/
+    border-bottom: 1px solid #666;
 }
 
-.navbar {
+.navigation {
     font-family: 'Quicksand';
-    background-color: #FFF;
-}
-
-.navbar-menu-right {
-    background-color: #FFF;
+    /*overflow: hidden;*/
+    font-weight: bold;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 85%;
+    padding: 15px 0 45px 0;
+    /*top right bottom left */
 }
 
-.navbar-menu-right ul {
+.navigation ul {
+    /* TA BORT PRICKEN: */
+    list-style: none;
+    /* TA BORT DEFULT VÄRDEN OCH ÄRVDA MARGINALER OCH PADDINGS: */
     margin: 0;
     padding: 0;
-    list-style-type: none;
-    text-align: center;
+    /* styling: */
+    font-family: 'Quicksand', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 400;
 }
 
-.navbar-menu-right li {
+.navigation > ul > li {
+    /* positioning */
     position: relative;
-    display: inline-block;
-    margin: 0 0px -5px 0;
-   
+    float: left;
+    /* styling: */
+    margin-right: 1px;
 }
 
-.navbar-menu-right li >ul:first-child {
-    visibility: hidden;
-}
-
-.navbar-menu-right li a {
-    color: #1c1c1c;
-    text-decoration: none;
-  
-}
-
-.navbar-menu-right > li > a {
-    font-size: 1.2em;
-    line-height: 24px;
-    padding: 0 15px;
-    text-transform: uppercase;
-}
-
-.navbar-menu-right a:hover {
-    border-bottom: 2px solid #FF450D;
-    color: #FF450D;
+.navigation > ul > li > a {
+    /* positioning */
     display: block;
-    -moz-transition: all 300ms ease-in-out 0s;
-    -ms-transition: all 300ms ease-in-out 0s;
-    -o-transition: all 300ms ease-in-out 0s;
-    -webkit-transition: all 300ms ease-in-out 0s;
-    transition: all 300ms ease-in-out 0s;
+    /* styling: */
+    background: rgba(44, 44, 44 ,0.0);
+    /*  grey */
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #aaaaaa;
 }
 
-.navbar-menu-right > li > a.active,
-.navbar-menu-right li a.active {
-    color: #FF450D;
+.navigation > ul > li > a:hover {
+    /* styling: */
+    background: rgba(252, 12, 12, 12,0.1);
+    /* grey */
+    color: #E80C0C;
+    /* light grey */
+}
+
+.navigation ul ul {
+    width: 120%;
+    /* you need a width to accommodate tertiary menus */
+    position: absolute;
+    z-index: 100;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.3s ease-in;
+    -moz-transition: height 0.3s ease-in;
+    -o-transition: height 0.3s ease-in;
+    -ms-transition: height 0.3s ease-in;
+    transition: height 0.3s ease-in;
+}
+
+.navigation > ul > li:hover ul,
+.navigation > ul > li > a:hover ul,
+.navigation ul ul li:hover > ul,
+.navigation ul ul li a:hover > ul {
+    height: 220px;
+    /* need a height to accommodate any tertiary menus */
+}
+
+
+/* if you want different styling for tertiary menus, just copy the 4 rules below and insert an additional ul: for example: ".navigation ul ul li", becomes: ".navigation ul ul ul li" */
+
+.navigation ul ul li {
+    background: rgba(234,234,234, 0.8);
+    /* grey */
+    width: auto;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.navigation ul ul li:hover {
+    background-color: #999;
+    /* grey */
+}
+
+.navigation ul ul li a {
+    display: block;
+    text-decoration: none;
+    margin: 0 12px;
+    padding: 5px 0;
+    color: #4c4c4c;
+    /* grey */
+}
+
+.navigation ul ul li a:hover,
+.navigation ul ul li:hover > a {
+    color: #ffffff;
+    /* white */
+}
+
+.navigation ul ul li + li a {
+    border-top: 1px dotted #999;
+}
+
+.navigation ul ul li:hover + li a {
+    border-top: 1px solid #eaeaea;
 }
 
 
@@ -160,49 +307,47 @@ nav {
 MOBILENAV
 =============================================
 */
-.navbar-menu-mobile {
-  display: none;
-  position: fixed;
-  width: 100%;
-  top: 0;
-}
-.navbar-menu-mobile div {
-  display: none;
-}
-.navbar-menu-mobile button {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  text-indent: 200%;
-  overflow: hidden;
-  background: rgba(255,255,255,0.8) url("http://i.imgur.com/vKRaKDX.png") center no-repeat;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  background-size: 80%;
-  width: 30px;
-  height: 30px;
-  outline: none;
-  -webkit-transition: all 400ms ease;
-          transition: all 400ms ease;
-}
-.button.expanded {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-  background-color: transparent;
-  border: 0;
-}
-.navbar-menu-mobile a {
-  display: block;
-}
-@media (max-width: 480px) {
-  .navbar-menu-mobile {
-    display: block;
-  }
-  .navbar {
+
+.mobile {
     display: none;
-  }
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
+
+.mobile div {
+    display: none;
+}
+
+.mobile.button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    text-indent: 200%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 15%;
+    background-size: 80%;
+    padding: 0px 0px 0px 0px;
+    outline: none;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.mobile.button.expanded {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    background-color: transparent;
+    border: 0;
+}
+
+.mobile a {
+    display: block;
+}
+
+
 /*  
 =============================================
 SECTIONS  
@@ -225,7 +370,7 @@ COLUMN SETUP
 .col {
     display: block;
     float: left;
-    margin: 1% 0 1% 1.6%;
+    margin: 1% 0 1% 1.2%;
 }
 
 .col:first-child {
@@ -270,21 +415,6 @@ COLUMN SETUP
 }
 
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
-
-@media only screen and (max-width: 480px) {
-    .col {
-        margin: 1% 0 1% 0%;
-    }
-    .span_1_of_4,
-    .span_2_of_4,
-    .span_3_of_4,
-    .span_4_of_4 {
-        width: 100%;
-    }
-}
-
-
 /*
 =============================================
 IMAGES
@@ -294,8 +424,45 @@ IMAGES
 .img-holder {}
 
 .img-circle {
-    border: 1px dashed #FF530D;
-    border-radius: 12%;
+    height: 100%;
+    width: 100%;
+    border-radius: 15%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+
+/*=======================================
+    SOCIAL SECTION STYLES
+==================================================*/
+
+#social-section {
+    float: left;
+    padding-right: 50%;
+}
+
+.scl {
+    padding-right: 15px;
+    display: inline-block;
+    background: rgb(65, 65, 65, 1);
+    color: #428BCA
+}
+
+.scl h4 {
+    font-size: 25px;
+}
+
+.scl a {
+    color: #428BCA
+}
+
+.scl a:hover {
+    color: #FFF;
+}
+
+.scl-dark-bk {
+    background: rgb(65, 65, 65, 1);
 }
 
 
@@ -305,10 +472,33 @@ FOOTER START
 =============================================
 */
 
-#footer-content {
-    width: 100%;
+footer {
+    margin-right: auto;
+    margin-left: auto;
     color: #fff;
-    padding: 20px 50px 20px 50px;
+    padding: 50px 50px 50px 50px;
     /*top right bottom left */
-    background-color: #333;
+    background-image: url(/css/pics/textures/black-stripe.png);
+}
+
+.footer-content {
+    float: right;
+}
+
+.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: #27AE61 url("../css/pics/up-arrow.png") no-repeat center 43%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+a:hover.back-to-top {
+    background-color: #000;
 }
