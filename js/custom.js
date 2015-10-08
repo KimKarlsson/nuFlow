@@ -31,9 +31,11 @@ $(function() {
 
 });
 /* MOBILMENY KNAPP */
+
 $('button').click(function() {
-    $(this).toggleClass('expanded').siblings('div').slideToggle();
+    $(this).toggleClass('expanded').siblings('nav').slideToggle();
 });
+
 /*
 SMOOTH SCROLLING
 */
@@ -71,11 +73,12 @@ $(function() {
     });
 });
 
-$(function(){
+$(function() {
     $('.fadein img:gt(0)').hide();
-    setInterval(function(){
-      $('.fadein :first-child').fadeOut()
-         .next('img').fadeIn()
-         .end().appendTo('.fadein');}, 
-      3000);
+    setInterval(function() {
+            $('.fadein :first-child').fadeOut()
+                .next('img').fadeIn()
+                .end().appendTo('.fadein');
+        },
+        3000);
 });

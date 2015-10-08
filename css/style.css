@@ -46,19 +46,18 @@ body {
 }
 
 header {
-    padding: 20px 0 5px 0;
+    padding: 0px 0 0px 0;
     /* TOP, RIGHT, BOTTOM, LEFT */
-    background-color: #333;
-    border-bottom: 1px solid #333;
 }
 
 .logo > h1 {
     font-size: 42px;
     font-weight: bold;
-    color: #FFF;
+    color: #428BCA;
     margin-right: auto;
     margin-left: auto;
-    padding-bottom: 8px;
+    padding-top: 20px;
+    padding-left: 25px;
     width: 85%;
 }
 
@@ -150,41 +149,11 @@ NAVIGATION START
 =============================================
 */
 
-
-/*
-#box {
-    background: #f4f4f4;
-    border: 1px solid #bbbbbb;
-    width: 200px;
-    height: 200px;
-    margin: 60px auto;
-    position: relative;
-}
-
-#box:before {
-    border: 1px solid white;
-    content: '';
-    width: 198px;
-    height: 198px;
-    position: absolute;
-}
-
-#box:after {
-    content: '';
-    position: absolute;
-    width: 196px;
-    height: 196px;
-    border: 1px solid #bbbbbb;
-    left: 1px;
-    top: 1px;
-}
-*/
-
 nav {
     width: 100%;
+    height: 95px;
     background-image: url(/css/pics/textures/bg_header.png);
     /*border-top: 1px solid #666;*/
-    border-bottom: 1px solid #666;
 }
 
 .navigation {
@@ -194,7 +163,7 @@ nav {
     margin-right: auto;
     margin-left: auto;
     width: 85%;
-    padding: 15px 0 45px 0;
+    padding: 10px 0 45px 0;
     /*top right bottom left */
 }
 
@@ -231,9 +200,9 @@ nav {
 
 .navigation > ul > li > a:hover {
     /* styling: */
-    background: rgba(252, 12, 12, 12,0.1);
+    background: rgba(252, 0, 0,0.0);
     /* grey */
-    color: #E80C0C;
+    color: #FFF;
     /* light grey */
 }
 
@@ -283,7 +252,7 @@ nav {
     text-decoration: none;
     margin: 0 12px;
     padding: 5px 0;
-    color: #4c4c4c;
+    color: #428BCA
     /* grey */
 }
 
@@ -309,7 +278,7 @@ MOBILENAV
 */
 
 .mobile {
-    display: none;
+    display: none; /* GÖMMER MOBILNAVEN*/
     position: fixed;
     width: 100%;
     top: 0;
@@ -439,7 +408,7 @@ IMAGES
 
 #social-section {
     float: left;
-    padding-right: 50%;
+
 }
 
 .scl {
