@@ -50,21 +50,23 @@
     <header>
         <!--MOBILE NAV STARTS HERE -->
         <button>MENY</button>
-        <nav class="mobile">
+        <nav id="mobile">
             <div>
                 <ul>
                     <li><a id="home" class="" href="../index.html">START</a></li>
                     <li><a id="about" class="" href="about.html">OM</a></li>
                     <li><a id="customers" class="" href="customers.html">REFERENSER</a></li>
-                    <li><a id="products" class="active" href="products.html#">PRODUKTER</a>
-                        <ul class="dropdown">
+                    <li><a id="products" class="active" href="#">PRODUKTER</a>
+                        <ul>
                             <li><a href="#budget">Budget</a></li>
                             <li><a href="#standard">Standard</a></li>
                             <li><a href="#deluxe">DeLuxe</a></li>
                             <li><a href="#sdeluxe">Super DeLuxe</a></li>
                         </ul>
                     </li>
+
                     <li><a id "contact" href="pages/contact.html">KONTAKT</a></li>
+
                 </ul>
             </div>
         </nav>
@@ -78,7 +80,7 @@
                     <li><a id="home" class="" href="../index.html">START</a></li>
                     <li><a id="about" class="" href="about.html">OM</a></li>
                     <li><a id="customers" class="" href="customers.html">REFERENSER</a></li>
-                    <li><a id="proucts" class="active" href="#">PRODUKTER</a>
+                    <li><a id="products" class="active" href="#">PRODUKTER</a>
                         <ul>
                             <li><a href="#budget">Budget</a></li>
                             <li><a href="#standard">Standard</a></li>
@@ -102,7 +104,7 @@
                         <div class="row">
                             <h1>BUDGET</h1></div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"> <img class="img-circle" src="../pics/pipes/budget/3.png"></img>
+                            <div class="img-holder"><img src="../pics/pipes/budget/3.png" class="img-circle image-box" /></img>
                                 <div class="prod-descripion">
                                     <p>Bacon ipsum dolor amet tongue leberkas ham hock, beef ribs capicola chicken tri-tip kevin pig pancetta flank sirloin bresaola ham. Hamburger cupim chuck bacon venison sausage pig. Bacon strip steak filet mignon shankle.
                                         Shankle shoulder corned beef, boudin turducken pastrami pork chop short loin chicken frankfurter filet mignon kevin doner tenderloin swine.</p>
@@ -110,12 +112,12 @@
                             </div>
                         </div>
                         <div class="col span_1_of_4 ">
-                            <div class="img-holder "><img class="img-circle" src="../pics/pipes/budget/1.png"></img>
+                            <div class="img-holder "><img class="img-circle image-box" src="../pics/pipes/budget/1.png"></img>
                                 <p>ra1d-ruta2</p>
                             </div>
                         </div>
                         <div class="col span_1_of_4 ">
-                            <div class="img-holdert"><img class="img-circle" src="../pics/pipes/budget/4.png"></img>
+                            <div class="img-holdert"><img class="img-circle image-box" src="../pics/pipes/budget/4.png"></img>
                                 <div class="prod-descripion">
                                     <div class="prod-descripion">
                                         <p>ra1d-ruta3</p>
@@ -124,7 +126,7 @@
                             </div>
                         </div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"><img class="img-circle" src="../pics/pipes/budget/2.png"></img>
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/budget/2.png"></img>
                                 <div class="prod-descripion">
                                     <p>ra1d-ruta4</p>
                                 </div>
@@ -144,19 +146,19 @@
                         <div class="row">
                             <h1>STANDARD</h1></div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"> <img class="img-circle" src="http://placehold.it/200x200"></img>
+                            <div class="img-holder"> <img class="img-circle image-box" src="http://placehold.it/200x200"></img>
                                 <div class="prod-descripion">
                                     <p>rad1-ruta1</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                            <div class="img-holder"><img class="img-circle image-box" src="http://placehold.it/200x200"></img>
                                 <p>rad1-ruta2</p>
                             </div>
                         </div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                            <div class="img-holder"><img class="img-circle image-box" src="http://placehold.it/200x200"></img>
                                 <div class="prod-descripion">
                                     <div class="prod-descripion">
                                         <p>rad1-ruta3</p>
@@ -165,7 +167,7 @@
                             </div>
                         </div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                            <div class="img-holder"><img class="img-circle image-box" src="http://placehold.it/200x200"></img>
                                 <div class="prod-descripion">
                                     <p>rad1-ruta4</p>
                                 </div>
@@ -185,19 +187,19 @@
                         <div class="row">
                             <h1>deLUXE</h1></div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"> <img class="img-circle" src="http://placehold.it/200x200"></img>
+                            <div class="img-holder"> <img class="img-circle image-box" src="http://placehold.it/200x200"></img>
                                 <div class="prod-descripion">
                                     <p>rad3-ruta1</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                            <div class="img-holder"><img class="img-circle image-box" src="http://placehold.it/200x200"></img>
                                 <p>rad3-ruta2</p>
                             </div>
                         </div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                            <div class="img-holder"><img class="img-circle image-box" src="http://placehold.it/200x200"></img>
                                 <div class="prod-descripion">
                                     <div class="prod-descripion">
                                         <p>rad3-ruta3</p>
@@ -206,7 +208,7 @@
                             </div>
                         </div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                            <div class="img-holder"><img class="img-circle image-box" src="http://placehold.it/200x200"></img>
                                 <div class="prod-descripion">
                                     <p>rad3-ruta4</p>
                                 </div>
@@ -226,21 +228,21 @@
                         <h1>SUPER deLUXE</h1></div>
                     <div class="section group">
                         <div class="col span_1_of_4">
-                            <div class="img-holder"> <img class="img-circle" src="http://placehold.it/200x200"></img>
+                            <div class="img-holder"> <img class="img-circle image-box" src="http://placehold.it/200x200"></img>
                                 <div class="prod-descripion">
                                     <p>rad4-ruta1</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"><img class="img-circle" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
                                 <div class="prod-descripion">
                                     <p>rad4-ruta2</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"><img class="img-circle" src="http://placehold.it/200x200"></img>
+                            <div class="img-holder"><img class="img-circle image-box" src="http://placehold.it/200x200"></img>
                                 <div class="prod-descripion">
                                     <div class="prod-descripion">
                                         <p>rad4-ruta3</p>
@@ -249,7 +251,7 @@
                             </div>
                         </div>
                         <div class="col span_1_of_4">
-                            <div class="img-holder"><img class="img-circle" src="../pics/pipes/superdeluxe/sdl-01.jpg"></img>
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-01.jpg"></img>
                                 <div class="prod-descripion">
                                     <p>rad4-ruta4</p>
                                 </div>
@@ -261,22 +263,6 @@
                 <!-- CONTAINER ENDS HERE -->
             </section>
             <!-- SECTION ENDS HERE -->
-            <!--<section>
-                <!-- Course 4 -->
-                <div class="animation-element bounce-up cf">
-                    <div class="subject design">
-                        <div class="category-color"></div>
-                        <div class="icon"><i class="fa fa-pencil"></i></div>
-                        <div class="header cf">
-                            <h4 class="date"><i class="fa fa-calendar-o"></i> June, 2015</h4>
-                            <h4 class="category"><i class="fa fa-folder-o"></i> Design</h4>
-                        </div>
-                        <h3 class="title">Designing for the web</h3>
-                        <div class="content">In this course we will look into specific design techniques and adapt them for use on the web. This will include...</div>
-                        <div class="enrole">Enrole</div>
-                    </div>
-                </div>
-            </section>-->
         </div>
     </div>
     <!--MAIN UI ENDS HERE -->
@@ -296,13 +282,11 @@
                     <h4>GOOGLE +</h4>
                     <p><a href="#"><i class="fa fa-google-plus fa-5x"></i></a></p>
                 </div>
-
             </section>
             <!--END SOCIAL SECTION-->
             <div id="footer-content">&copy 2015 www.nuFlow.com | All Right Reserved </div>
         </div>
     </footer>
-    <!-- FOOTER ENDS HERE -->
     <script type="text/javascript " src="../js/custom.js "></script>
     <script type="text/javascript " src="../js/css_reset.js "></script>
 
