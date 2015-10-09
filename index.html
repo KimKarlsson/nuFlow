@@ -16,15 +16,15 @@
 
     <!-- APPLE ICON -->
     <link rel="apple-touch-icon" href="../pics/apple-icons/apple-icon.png" />
-    <link href="../pics/apple-icons/apple-touch-icon.png" rel="apple-touch-icon" />
-    <link href="../pics/apple-icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
-    <link href="../pics/apple-icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
-    <link href="../pics/apple-icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
-    <link href="../pics/apple-icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="pics/apple-icons/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="pics/apple-icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="pics/apple-icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="pics/apple-icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+    <link href="pics/apple-icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
 
     <!-- ANDROID ICON -->
-    <link href="../pics/android-icons/icon-hires-192x192.png" rel="icon" sizes="192x192" />
-    <link href="../pics/android-icons/icon-normal-128x128.png" rel="icon" sizes="128x128" />
+    <link href="pics/android-icons/icon-hires-192x192.png" rel="icon" sizes="192x192" />
+    <link href="pics/android-icons/icon-normal-128x128.png" rel="icon" sizes="128x128" />
 
 
     <!-- RESET CSS -->
@@ -34,7 +34,7 @@
     <link href="css/form.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
     <!-- FONTAWESOME STYLE CSS -->
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
 
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
@@ -52,8 +52,8 @@
     <header>
         <!--MOBILE NAV STARTS HERE -->
         <button>Menu</button>
-        <nav >
-            <div id="mobile">
+        <nav class="mobile">
+            <div>
                 <ul>
                     <li><a id="home" class="active return" href="/">START</a></li>
                     <li><a id="about" href="pages/about.html">OM</a></li>
@@ -65,7 +65,7 @@
         </nav>
         <!--MOBILE NAV ENDS HERE -->
         <!-- NAVBAR STARTS HERE -->
-        <nav class="scrollclass">
+        <nav>
             <div class="logo">
                 <h1>nuFLOW</h1></div>
             <div class="navigation ">
@@ -87,16 +87,24 @@
         </nav>
         <!-- NAVBAR ENDS HERE -->
     </header>
-    <!--<div class="fadein">
-        <img src="css/pics/textures/mainback.jpg">
-        <img src="http://farm3.static.flickr.com/2597/4121218611_040cd7b3f2.jpg">
-        <img src="http://farm3.static.flickr.com/2531/4121218751_ac8bf49d5d.jpg">
-    </div>-->
-
+    <section>
+        <div id="main-holder">
+            <div class="container">
+                <div class="fade-in-holder">
+                    <div class="fadein">
+                        <img src="http://farm3.static.flickr.com/2597/4121218611_040cd7b3f2.jpg">
+                        <img src="http://farm3.static.flickr.com/2597/4121218611_040cd7b3f2.jpg">
+                        <img src="http://farm3.static.flickr.com/2531/4121218751_ac8bf49d5d.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="row-devider"></div>
     <div id="main-holder">
         <!--MAIN SECTION-->
         <section>
-            <div class="container">
+            <div class="container-shadow-box">
                 <p>Bacon ipsum dolor amet aute landjaeger prosciutto laborum, ad culpa brisket spare ribs pork belly. Leberkas shank voluptate, quis reprehenderit eiusmod fatback elit turducken tail sint brisket irure consectetur. Kevin shoulder culpa, dolore
                     eiusmod pork loin tenderloin capicola drumstick filet mignon esse jerky consequat. Veniam sed ut short loin, meatloaf laboris chuck salami boudin cillum ad ham spare ribs in eiusmod. Culpa jerky pastrami, qui sirloin labore ad exercitation
                     tempor deserunt. Fatback tongue nisi eu voluptate officia. Alcatra jerky sunt drumstick magna rump ut ex chicken velit lorem.</p>
@@ -115,9 +123,7 @@
             <div class="container"></div>
         </section>
     </div>
-
     <!--MAIN UI ENDS HERE -->
-
 
     <footer>
         <div class="container">
@@ -125,27 +131,26 @@
             <section id="social-section">
                 <div class="scl">
                     <h4>FACEBOOK</h4>
-                    <p><a href="#"><i class="fa fa-facebook fa-5x"></i></a></p>
+                    <p><a href="#"><i class="fa fa-facebook fa-3x"></i></a></p>
                 </div>
                 <div class="scl">
                     <h4>TWITTER</h4>
-                    <p><a href="#"><i class="fa fa-twitter fa-5x"></i></a></p>
+                    <p><a href="#"><i class="fa fa-twitter fa-3x"></i></a></p>
                 </div>
                 <div class="scl">
                     <h4>GOOGLE +</h4>
-                    <p><a href="#"><i class="fa fa-google-plus fa-5x"></i></a></p>
+                    <p><a href="#"><i class="fa fa-google-plus fa-3x"></i></a></p>
                 </div>
-            </section>
 
-            <!--END SOCIAL SECTION-->
-
-            <div id="footer-content">&copy 2015 www.nuFlow.com | All Right Reserved </div>
         </div>
+        </section>
+
+        <!--END SOCIAL SECTION-->
+
+        <div id="footer-content">&copy 2015 www.nuFlow.com | All Right Reserved </div>
     </footer>
     <!-- FOOTER ENDS HERE -->
     <script type="text/javascript " src="js/custom.js "></script>
-    <script type="text/javascript " src="js/css_reset.js "></script>
-
 </body>
 
 </html>

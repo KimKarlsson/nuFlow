@@ -39,8 +39,8 @@ $(function() {
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 $('html,body').animate({
-                    scrollTop: target.offset().top - 100
-                }, 1500);
+                    scrollTop: target.offset().top - 50
+                }, 1500); 
                 return false;
             }
         }
@@ -70,21 +70,6 @@ $(this).ready(function() {
 });
 
 
-/*BILDBYTARE
-$(function() {
-    $('.fadein img:gt(0)').hide();
-    setInterval(function() {
-            $('.fadein :first-child').animate({
-                    'left': '=0'
-                }, 'fast')
-                .next('img').animate({
-                    'left': '+=100%'
-                }, 'fast')
-                .end().appendTo('.fadein');
-        },
-        1500);
-});
-*/
 
 
 /*
@@ -96,28 +81,29 @@ MOBILE JQUERY
 /* MOBILMENY KNAPP */
 
 $('button').click(function() {
-    $(this).toggleClass('expanded').siblings('nav').slideToggle();
+    $(this).toggleClass('slideToggle').siblings('nav').slideToggle();
 });
 
 $(function() {
     // HÄMTAR TOP OFFSET I MENYN
-    var stickyNavTop = $('#mobile').offset().top;
+    var stickyNavTop = $('.mobile').offset().top;
     // our function that decides weather the navigation bar should have "fixed" css position or not.
     var stickyNav = function() {
         var scroll_top = $(window).scrollTop(); // our current vertical position from the top
         // if we've scrolled more than the navigation, change its position to fixed to stick to top,
         // otherwise change it back to relative
         if (scroll_top > stickyNavTop) {
-            $('#mobile').animate({
-                    'top': - 200,
-                }, 1500);
-
+            $('.mobile').css({
+                'position': 'fixed',
+                'top': -110,
+                'left': 0,
+            });
         }
         else {
-            $('#mobile').animate({
-                    scrollTop: scroll_top.offset().top 
-                }, 1500);
-
+            $('.mobile').css({
+                'position': 'absolute',
+                'top': 0,
+            });
         }
     };
     // STARTAR FUNKTIONEN

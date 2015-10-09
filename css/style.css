@@ -20,7 +20,7 @@ header {
 .logo > h1 {
     font-size: 42px;
     font-weight: bold;
-    color: #428BCA;
+    color: orange;
     margin-right: auto;
     margin-left: auto;
     padding-top: 20px;
@@ -34,14 +34,6 @@ header {
     margin-left: auto;
 }
 
-.container-shadow-box {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    -webkit-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.7);
-    -moz-box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.7);
-    box-shadow: 0px 0px 8px 0px rgba(50, 50, 50, 0.7);
-}
 
 .row > h1 {
     color: #000;
@@ -207,7 +199,7 @@ nav {
 /* if you want different styling for tertiary menus, just copy the 4 rules below and insert an additional ul: for example: ".navigation ul ul li", becomes: ".navigation ul ul ul li" */
 
 .navigation ul ul li {
-    background: rgba(234, 234, 234, 0.8);
+    background: rgba(234, 234, 234, 0.9);
     /* grey */
     width: auto;
     -webkit-transition: background-color 0.3s ease;
@@ -227,7 +219,8 @@ nav {
     text-decoration: none;
     margin: 0 12px;
     padding: 5px 0;
-    color: #428BCA
+    color: orange;
+    font-weight: bold;
     /* grey */
 }
 
@@ -252,7 +245,7 @@ MOBILENAV
 =============================================
 */
 
-#mobile {
+.mobile {
     display: none;
     /* GÖMMER MOBILNAVEN*/
     position: fixed;
@@ -260,12 +253,30 @@ MOBILENAV
     top: 0;
 }
 
-#mobile div {
+.mobile div {
     display: none;
 }
 
 button {
     display: none;
+}
+
+
+/*  
+=============================================
+IMAGE SLIDER  
+=============================================
+*/
+
+.fade-in-holder {
+    padding-top: 90px;
+    height: 450px;
+    width: 100%;
+}
+
+.row-devider {
+    padding: 35px 0 0 0;
+    background-color: #333;
 }
 
 
@@ -280,7 +291,9 @@ SECTIONS
     padding: 0px;
     margin: 0px;
 }
-
+#budget{
+    padding-top: 100px;
+}
 
 /*   
 =============================================
@@ -330,6 +343,28 @@ COLUMN SETUP
     width: 23.8%;
 }
 
+.shadow-box {
+  position: relative;
+  width: 90%;
+}
+
+.shadow-box:before,
+.shadow-box:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  height: 20%;
+  max-width: 300px;
+  box-shadow :0 15px 10px rgba(0, 0, 0, 0.7);
+  transform: rotate(-3deg);
+}
+
+.shadow-box:after{
+border-radius: 0 0 120px 120px / 0 0 6px 6px;
+}
 
 /*
 =============================================
@@ -383,25 +418,26 @@ IMAGES
 
 #social-section {
     float: left;
+    padding-right: 45%;
 }
 
 .scl {
-    padding-right: 15px;
+    text-align: center;
+    padding-right: 25px;
     display: inline-block;
-    background: rgb(65, 65, 65, 0);
-    color: #428BCA
+    color: #FFF;
 }
 
 .scl h4 {
-    font-size: 25px;
+    font-size: 1.0em;
 }
 
 .scl a {
-    color: #428BCA
+    color: #FFF
 }
 
 .scl a:hover {
-    color: #FFF;
+    color: rgba(64, 0, 0, 0.8)
 }
 
 .scl-dark-bk {
@@ -417,17 +453,17 @@ FOOTER START
 
 footer {
     width: 100%;
-    text-align: right;
     margin-right: auto;
     margin-left: auto;
     color: #fff;
-    padding: 45px 0 30px 0;
+    padding: 25px 0 50px 0;
     /*top right bottom left */
     background-image: url(/css/pics/textures/bg_footer.png);
 }
 
 .footer-content {
-    float: right;
+    padding-left: 50%;
+    float: left;
 }
 
 .back-to-top {
@@ -438,12 +474,12 @@ footer {
     z-index: 999;
     right: 20px;
     bottom: 20px;
-    background: #656565 url("../css/pics/up-arrow.png") no-repeat center 43%;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 50%;
+    background: rgba(64, 0, 0, 0.8) url("../css/pics/up-arrow.png") no-repeat center 43%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 35%;
 }
 
 a:hover.back-to-top {
-    background-color: #1C1C1C;
+    background: rgba(65, 65, 65, 0.5) url("../css/pics/up-arrow.png") no-repeat center 43%;
 }
