@@ -1,5 +1,4 @@
 $(function() {
-
     // HÄMTAR TOP OFFSET I MENYN
     var stickyNavTop = $('nav').offset().top;
     // our function that decides weather the navigation bar should have "fixed" css position or not.
@@ -20,7 +19,6 @@ $(function() {
             });
         }
     };
-
     // STARTAR FUNKTIONEN
     stickyNav();
 
@@ -47,38 +45,45 @@ $(function() {
             if (target.length) {
                 $('html,body').animate({
                     scrollTop: target.offset().top - 100
-                }, 1000);
+                }, 1500);
                 return false;
             }
         }
     });
-    /* BACK TO TOP FUNCTION */
-    $('body').prepend('<a href="#" class="back-to-top"></a>');
-    var amountScrolled = 200;
 
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > amountScrolled) {
-            $('a.back-to-top').fadeIn('slow');
-        }
-        else {
-            $('a.back-to-top').fadeOut('slow');
-        }
-    });
+});
+/* BACK TO TOP FUNCTION */
 
-    $('a.back-to-top').click(function() {
-        $('body').animate({
-            scrollTop: 0
-        }, 1500);
-        return false;
-    });
+$(document).ready(function(){
+	    $('body').prepend('<a href="#" class="back-to-top"></a>');
+    var amountScrolled = 100;
+	//Check to see if the window is top if not then display button
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > amountScrolled) {
+			$('a.back-to-top').fadeIn();
+		} else {
+			$('a.back-to-top').fadeOut();
+		}
+	});
+	$('a.back-to-top').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
 });
 
+
+/*BILDBYTARE*/
 $(function() {
     $('.fadein img:gt(0)').hide();
     setInterval(function() {
-            $('.fadein :first-child').fadeOut()
-                .next('img').fadeIn()
+            $('.fadein :first-child').animate({
+                    'left': '=0'
+                }, 'fast')
+                .next('img').animate({
+                    'left': '+=100%'
+                }, 'fast')
                 .end().appendTo('.fadein');
         },
-        3000);
+        1500);
 });

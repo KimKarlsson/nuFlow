@@ -45,6 +45,9 @@
     display: block;
     margin: 0 0px 0px 0;
   }
+  .dropdown li {
+    height: 30px;
+  }
   .mobile li >ul:first-child {
     visibility: hidden;
   }
@@ -54,8 +57,8 @@
   }
   .mobile > li > a {
     font-size: 1.2em;
-    line-height: 24px;
-    padding: 0 15px;
+    line-height: 30px;
+    padding: 0 30px;
     text-transform: uppercase;
   }
   .mobile > li > a.active,
@@ -92,6 +95,25 @@
   }
   button:hover {
     text-decoration: none;
+  }
+  /*
+  BACK TO TOP FUNCTION
+  */
+  .back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 20px;
+    background: #27AE61 url("../css/pics/up-arrow.png") no-repeat center 43%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+  a:hover.back-to-top {
+    background-color: #000;
   }
   /*
 =============================================
