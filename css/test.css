@@ -1,0 +1,50 @@
+/*inte visa error*/
+.error{
+	display: none;
+	margin-left: 10px;
+}		
+/*visa error*/
+.error_show{
+	color: red;
+	margin-left: 10px;
+}
+/*fel inmat*/
+input.invalid, textarea.invalid{
+	border: 2px solid red;
+}
+/*rätt inmat*/
+input.valid, textarea.valid{
+	border: 2px solid green;
+}
+/* frågeform*/
+label {
+  display: block;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+/* placerar popup-rutan*/
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+/* bagrund och skugga */
+.popup-inner {
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+ 

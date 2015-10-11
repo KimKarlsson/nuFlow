@@ -16,90 +16,141 @@
 
     <!-- APPLE ICON -->
     <link rel="apple-touch-icon" href="../pics/apple-icons/apple-icon.png" />
-    <link href="../pics/apple-icons/apple-touch-icon.png" rel="apple-touch-icon" />
-    <link href="../pics/apple-icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
-    <link href="../pics/apple-icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
-    <link href="../pics/apple-icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
-    <link href="../pics/apple-icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="pics/apple-icons/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="pics/apple-icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="pics/apple-icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="pics/apple-icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+    <link href="pics/apple-icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
 
     <!-- ANDROID ICON -->
-    <link href="../pics/android-icons/icon-hires-192x192.png" rel="icon" sizes="192x192" />
-    <link href="../pics/android-icons/icon-normal-128x128.png" rel="icon" sizes="128x128" />
+    <link href="pics/android-icons/icon-hires-192x192.png" rel="icon" sizes="192x192" />
+    <link href="pics/android-icons/icon-normal-128x128.png" rel="icon" sizes="128x128" />
 
 
     <!-- RESET CSS -->
     <link href="css/css_reset.css" rel="stylesheet" type="text/css" media="screen">
-    <!-- BOOTSTRAP -->
-    <!--<link href="css/bootstrap.css" rel="stylesheet" />-->
 
     <!-- STANDARD CSS -->
     <link href="css/form.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
-    
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
     <!-- GOOGLE FONTS -->
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-    <!-- SCREENS <= 480px
+    <!-- SCREENS <= 480px -->
     <link href="../css/smartphone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
- -->
+
 
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <!--MOBILE NAV -->
-            <!--MOBILE NAV ENDS HERE -->
+    <header>
+        <!--MOBILE NAV STARTS HERE -->
+        <button>Menu</button>
+        <nav class="mobile">
             <div>
-                <ul class="navbar-menu-right">
-                    <li><a id="home" class="active" href="index.html">START</a></li>
+                <ul>
+                    <li><a id="home" class="active return" href="/">START</a></li>
+                    <li><a id="about" href="pages/about.html">OM</a></li>
+                    <li><a id="customers" href="pages/customers.html">REFERENSER</a></li>
+                    <li><a id="products" href="pages/products.html">PRODUKTER</a></li>
+                    <li><a id "contact" href="pages/contact.html">KONTAKT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--MOBILE NAV ENDS HERE -->
+        <!-- NAVBAR STARTS HERE -->
+        <nav>
+            <div class="logo">
+                <h1>nuFLOW</h1></div>
+            <div class="navigation ">
+                <ul>
+                    <li><a id="home" class="active" href="index.html#">START</a></li>
                     <li><a id="about" href="pages/about.html">OM</a></li>
                     <li><a id="customers" href="pages/customers.html">REFERENSER</a></li>
                     <li><a id="products" href="pages/products.html">PRODUKTER</a>
                         <ul class="dropdown">
-                            <li><a href="pages/pipes/budget.html">Budget</a></li>
-                            <li><a href="pages/pipes/standard.html">Standard</a></li>
-                            <li><a href="pages/pipes/deluxe.html">DeLuxe</a></li>
-                            <li><a href="pages/pipes/superdeluxe.html">Super DeLuxe</a></li>
+                            <li><a href="pages/products.html#budget">Budget</a></li>
+                            <li><a href="pages/products.html#standardl">Standard</a></li>
+                            <li><a href="pages/products.html#deluxe">DeLuxe</a></li>
+                            <li><a href="pages/products.html#sdeluxe">Super DeLuxe</a></li>
                         </ul>
                     </li>
-                    <li><a id "contact" href="pages/contact.html">KONTAKT</a></li>
+                    <li><a id="contact" href="pages/contact.html">KONTAKT</a></li>
                 </ul>
             </div>
+        </nav>
+        <!-- NAVBAR ENDS HERE -->
+    </header>
+    <section>
+        <div id="main-holder">
+            <div class="container">
+                <div class="fade-in-holder">
+                    <div class="fadein">
+                        <img src="http://farm3.static.flickr.com/2597/4121218611_040cd7b3f2.jpg">
+                        <img src="http://farm3.static.flickr.com/2597/4121218611_040cd7b3f2.jpg">
+                        <img src="http://farm3.static.flickr.com/2531/4121218751_ac8bf49d5d.jpg">
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-    <!--MAIN SECTION-->
-    <div id="main">
+    </section>
+    <div class="row-devider"></div>
+    <div id="main-holder">
+        <!--MAIN SECTION-->
         <section>
+            <div class="container-shadow-box">
+                <p>Bacon ipsum dolor amet aute landjaeger prosciutto laborum, ad culpa brisket spare ribs pork belly. Leberkas shank voluptate, quis reprehenderit eiusmod fatback elit turducken tail sint brisket irure consectetur. Kevin shoulder culpa, dolore
+                    eiusmod pork loin tenderloin capicola drumstick filet mignon esse jerky consequat. Veniam sed ut short loin, meatloaf laboris chuck salami boudin cillum ad ham spare ribs in eiusmod. Culpa jerky pastrami, qui sirloin labore ad exercitation
+                    tempor deserunt. Fatback tongue nisi eu voluptate officia. Alcatra jerky sunt drumstick magna rump ut ex chicken velit lorem.</p>
+
+                <p>Aute duis doner, veniam voluptate dolore sausage qui venison laboris chicken. Capicola turkey beef, short ribs porchetta eu bresaola. Exercitation reprehenderit brisket prosciutto shank beef chicken in tri-tip. Dolore cupidatat sed jerky
+                    sirloin flank turducken commodo fatback est deserunt short ribs.</p>
+
+                <p>Magna pig spare ribs leberkas. Strip steak ex ipsum sint laboris id, porchetta tail ham hock ea chicken in. In cillum pork loin landjaeger, ea proident sint fatback cupidatat minim bresaola boudin ullamco magna. Proident shank aute quis,
+                    velit ea ullamco short loin tenderloin beef turducken nostrud. Veniam doner landjaeger kevin eiusmod, hamburger bresaola aute. Sed strip steak mollit shankle.</p>
+
+                <p>Officia andouille pariatur, t-bone nisi do fugiat drumstick rump biltong eu cillum. Spare ribs porchetta ad, pork chop tongue sausage short loin chuck reprehenderit occaecat pancetta. Alcatra cillum prosciutto chuck spare ribs. Minim short
+                    loin kevin ut, ball tip pork meatloaf magna occaecat elit sausage nulla. Nisi doner qui cupidatat. Ut proident t-bone elit landjaeger officia laborum aliquip dolore qui ex esse.</p>
+            </div>
         </section>
         <section>
             <div class="container"></div>
         </section>
     </div>
-
-    <!-- Bara ett litet TEST av länkar. 2015-10-06-->
-    <!-- <div id="noId">
-        <ul>
-            <li><a id="noHome" href="index.html">noHome</a></li>
-            <li><a id="noAbout" href="pages/about.html">noAbout</a></li>
-            <li><a id="noTestimonials" href="pages/testimonials.html">noTestimonials</a></li>
-            <li><a id="noPricing" href="pages/pricing.html">noPricing</a></li>
-            <li><a id="noContact" href="pages/contact.html">noContact</a></li>
-        </ul>
-    </div> -->
-    <!-- test av länkar slutar här -->
-
     <!--MAIN UI ENDS HERE -->
+
     <footer>
+        <div class="container">
+            <!--SOCIAL SECTION-->
+            <section id="social-section">
+                <div class="scl">
+                    <h4>FACEBOOK</h4>
+                    <p><a href="#"><i class="fa fa-facebook fa-3x"></i></a></p>
+                </div>
+                <div class="scl">
+                    <h4>TWITTER</h4>
+                    <p><a href="#"><i class="fa fa-twitter fa-3x"></i></a></p>
+                </div>
+                <div class="scl">
+                    <h4>GOOGLE +</h4>
+                    <p><a href="#"><i class="fa fa-google-plus fa-3x"></i></a></p>
+                </div>
+
+        </div>
+        </section>
+
+        <!--END SOCIAL SECTION-->
+
         <div id="footer-content">&copy 2015 www.nuFlow.com | All Right Reserved </div>
     </footer>
+    <!-- FOOTER ENDS HERE -->
     <script type="text/javascript " src="js/custom.js "></script>
-    <script type="text/javascript " src="js/css_reset.js "></script>
-
-
 </body>
 
 </html>
