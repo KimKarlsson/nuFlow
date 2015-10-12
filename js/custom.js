@@ -92,20 +92,20 @@ function () {
 
 $(function() {
     // HÄMTAR TOP OFFSET I MENYN
-    var stickyNavTop = $('nav').offset().top;
+    var stickyNavTop = $('header,nav').offset().top;
     // BESTÄMMER OM NAV ÄR FAST ELLER INTE
     var stickyNav = function() {
-        var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+        var scroll_top = $(window).scrollTop(); // POSITON TILL SIDANS TOPP
         // OM SCROLLING SKER LÄNGER ÄN TILL NAV, FÄST NAV -50PX,
         if (scroll_top > stickyNavTop) {
-            $('nav').css({
+            $('header,nav').css({
                 'position': 'fixed',
                 'top': -50,
                 'left': 0,
             });
         }
         else {
-            $('nav').css({
+            $('header,nav').css({
                 'position': 'absolute',
                 'top': 0,
             });
