@@ -6,10 +6,18 @@
     margin: 0;
     -webkit-font-smoothing: antialiased !important;
   }
-  .container {
+  header {
+    height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.5s ease-in-out;
     width: 100%;
   }
+  .container {
+    max-width: 480px;
+  }
   a {
+    text-decoration: none;
     color: #FFF;
     display: block;
   }
@@ -22,7 +30,14 @@
     font-family: "Questrial";
     font-size: 14px;
   }
+  .mob-header {
+    height: 100px;
+    background-color: #333;
+  }
   nav {
+    position: fixed;
+    top: 0;
+    transition: top 0.5s ease-in-out;
     width: 100%;
   }
   .mobile {
@@ -40,21 +55,47 @@
     width: 100%;
   }
   .mobile ul {}
+  .mobile ul li {
+    text-decoration: none;
+    padding-top: 15px;
+    text-align: justify;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-bottom: 1px dashed #999;
+    height: 40px;
+    background-image: url(pics/textures/mob_nav.png);
+  }
+  .mobile ul li:last-child {
+    border-bottom: 2px solid #333;
+  }
   .mobile > ul > li {
+    position: relative;
     border-bottom: 1px dashed #999;
     margin-right: 1px;
   }
   .mobile > ul > li > a {
     display: block;
-    padding: 8px 14px;
     text-decoration: none;
-    border-top: 1px dotted #FFF;
   }
   .mobile ul ul {
     width: 100%;
+    position: absolute;
+    z-index: 55;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.3s ease-in;
+    -moz-transition: height 0.3s ease-in;
+    -o-transition: height 0.3s ease-in;
+    -ms-transition: height 0.3s ease-in;
+    transition: height 0.3s ease-in;
   }
   .mobile ul ul li {
     width: auto;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
   }
   .mobile ul ul li a {
     display: block;
@@ -67,6 +108,9 @@
   }
   .navigation {
     display: none;
+  }
+  .navigation-up {
+    top: -100px;
   }
   .col {
     margin: 5% 10% 5% 5%;
@@ -84,9 +128,10 @@
     border-radius: 15%;
   }
   button {
+    border-radius: 15%;
     height: 30px;
     width: 60px;
-    margin: 2% 0 0 85%;
+    margin: 2% 0 0 50%;
     /*top, right, bottom, left*/
     box-shadow: 0px 1px 4px #666666;
     font-family: 'Quicksand';
@@ -97,10 +142,21 @@
     position: relative;
   }
   button:hover {
+    border-radius: 15%;
     text-decoration: none;
   }
+  .fade-in-holder {
+    padding-top: 90px;
+    max-width: 100%;
+  }
+  .row-devider {
+    padding: 35px 0 0 0;
+    background-color: #333;
+  }
   /*
+  =======================================
   BACK TO TOP FUNCTION
+  =======================================
   */
   .back-to-top {
     display: none;
@@ -110,7 +166,7 @@
     z-index: 999;
     right: 20px;
     bottom: 20px;
-    background: rgba(65,65,65,0.5) url("../css/pics/up-arrow.png") no-repeat center 43%;
+    background: rgba(65, 65, 65, 0.5) url("../css/pics/up-arrow.png") no-repeat center 43%;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;

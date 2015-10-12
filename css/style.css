@@ -8,13 +8,15 @@ body {
     font-size: 14px;
     line-height: 20px;
     margin: 0;
-    /*color: #1c1c1c;*/
-    -webkit-font-smoothing: antialiased !important;
 }
 
 header {
-    padding: 0px 0 0px 0;
-    /* TOP, RIGHT, BOTTOM, LEFT */
+    z-index: 999;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.5s ease-in-out;
+    width: 100%;
 }
 
 .logo > h1 {
@@ -33,7 +35,6 @@ header {
     margin-right: auto;
     margin-left: auto;
 }
-
 
 .row > h1 {
     color: #000;
@@ -78,7 +79,7 @@ CAROUSELL
 
 .fadein {
     position: absolute;
-    width: 75%;
+    width: 50%;
     height: 35%;
 }
 
@@ -121,16 +122,18 @@ nav {
     height: 95px;
     background-image: url(/css/pics/textures/bg_header.png);
     /*border-top: 1px solid #666;*/
+    position: fixed;
+    top: 0;
+    transition: top 0.5s ease-in-out;
 }
 
 .navigation {
     font-family: 'Quicksand';
-    /*overflow: hidden;*/
     font-weight: bold;
     margin-right: auto;
     margin-left: auto;
     width: 85%;
-    padding: 10px 0 45px 0;
+    padding: 50px 0 5px 0;
     /*top right bottom left */
 }
 
@@ -147,39 +150,31 @@ nav {
 }
 
 .navigation > ul > li {
-    /* positioning */
     position: relative;
     float: left;
-    /* styling: */
     margin-right: 1px;
 }
 
 .navigation > ul > li > a {
-    /* positioning */
     display: block;
-    /* styling: */
     background: rgba(44, 44, 44, 0.0);
-    /*  grey */
     padding: 8px 14px;
     text-decoration: none;
     color: #aaaaaa;
 }
 
 .navigation > ul > li > a:hover {
-    /* styling: */
     background: rgba(252, 0, 0, 0.0);
-    /* grey */
     color: #FFF;
-    /* light grey */
 }
 
 .navigation ul ul {
     width: 120%;
-    /* you need a width to accommodate tertiary menus */
     position: absolute;
     z-index: 100;
     height: 0;
     overflow: hidden;
+    box-shadow: 0px 1px 4px #666666;
     -webkit-transition: height 0.3s ease-in;
     -moz-transition: height 0.3s ease-in;
     -o-transition: height 0.3s ease-in;
@@ -191,16 +186,11 @@ nav {
 .navigation > ul > li > a:hover ul,
 .navigation ul ul li:hover > ul,
 .navigation ul ul li a:hover > ul {
-    height: 220px;
-    /* need a height to accommodate any tertiary menus */
+    height: auto;
 }
-
-
-/* if you want different styling for tertiary menus, just copy the 4 rules below and insert an additional ul: for example: ".navigation ul ul li", becomes: ".navigation ul ul ul li" */
 
 .navigation ul ul li {
     background: rgba(234, 234, 234, 0.9);
-    /* grey */
     width: auto;
     -webkit-transition: background-color 0.3s ease;
     -moz-transition: background-color 0.3s ease;
@@ -211,7 +201,6 @@ nav {
 
 .navigation ul ul li:hover {
     background-color: #999;
-    /* grey */
 }
 
 .navigation ul ul li a {
@@ -221,13 +210,11 @@ nav {
     padding: 5px 0;
     color: orange;
     font-weight: bold;
-    /* grey */
 }
 
 .navigation ul ul li a:hover,
 .navigation ul ul li:hover > a {
     color: #ffffff;
-    /* white */
 }
 
 .navigation ul ul li + li a {
@@ -236,6 +223,11 @@ nav {
 
 .navigation ul ul li:hover + li a {
     border-top: 1px solid #eaeaea;
+}
+
+.navigation-up {
+    z-index: 99;
+    top: -50px;
 }
 
 
@@ -270,7 +262,7 @@ IMAGE SLIDER
 
 .fade-in-holder {
     padding-top: 90px;
-    height: 450px;
+    height: 300px;
     width: 100%;
 }
 
@@ -291,9 +283,11 @@ SECTIONS
     padding: 0px;
     margin: 0px;
 }
-#budget{
+
+#budget {
     padding-top: 100px;
 }
+
 
 /*   
 =============================================
@@ -325,7 +319,11 @@ COLUMN SETUP
 }
 
 
-/*  GRID OF FOUR  */
+/* 
+===============================
+GRID OF FOUR  
+===============================
+*/
 
 .span_4_of_4 {
     width: 100%;
@@ -344,27 +342,28 @@ COLUMN SETUP
 }
 
 .shadow-box {
-  position: relative;
-  width: 90%;
+    position: relative;
+    width: 90%;
 }
 
 .shadow-box:before,
 .shadow-box:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  height: 20%;
-  max-width: 300px;
-  box-shadow :0 15px 10px rgba(0, 0, 0, 0.7);
-  transform: rotate(-3deg);
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    height: 20%;
+    max-width: 300px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    transform: rotate(-3deg);
 }
 
-.shadow-box:after{
-border-radius: 0 0 120px 120px / 0 0 6px 6px;
+.shadow-box:after {
+    border-radius: 0 0 120px 120px / 0 0 6px 6px;
 }
+
 
 /*
 =============================================
@@ -468,16 +467,16 @@ footer {
 
 .back-to-top {
     display: none;
-    width: 60px;
+    width: 50px;
     height: 60px;
     position: fixed;
     z-index: 999;
     right: 20px;
     bottom: 20px;
     background: rgba(64, 0, 0, 0.8) url("../css/pics/up-arrow.png") no-repeat center 43%;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 35%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 40%;
 }
 
 a:hover.back-to-top {
