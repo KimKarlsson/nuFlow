@@ -190,29 +190,3 @@ textarea {
     height: 5em;
 }
 
-
-/*FORMULÄRKNAPPAR*/
-
-
-/*============= få fram knappen igen==================*/
-
-.showbutton {
-    display: block;
-}
-
-#form_submit.showbutton {
-    display: block;
-}
-
-.btn.showbutton {
-    display: block;
-}
-
-button:hover {
-    text-decoration: none;
-}
-
-textarea {
-    vertical-align: top;
-    height: 5em;
-}

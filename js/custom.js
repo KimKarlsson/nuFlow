@@ -80,11 +80,11 @@ MOBILE JQUERY
 */
 
 /* MOBILMENY KNAPP */
-/*$('button').click(
+$('button.mob-button').click(
 function () {
     $('.mobile').slideToggle(1000)('slideToggle');
 });
-*/
+
 $('.mob-sub').click(
 function () {
     $(this).parent().toggleClass("slideToggle");
