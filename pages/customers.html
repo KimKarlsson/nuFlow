@@ -1,25 +1,178 @@
 <!DOCTYPE html>
-
 <html lang="sv">
 
 <head>
-    <title>Title</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <title>CONTACT - nuFlow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- JQUERY -->
+    <script type="text/javascript " src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="../pics/favicon.png" type="image/x-icon" />
+
+    <!-- APPLE ICON -->
+    <link rel="apple-touch-icon" href="../pics/apple-icons/apple-icon.png" />
+    <link href="../pics/apple-icons/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="../pics/apple-icons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+    <link href="../pics/apple-icons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+    <link href="../pics/apple-icons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+    <link href="../pics/apple-icons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+
+    <!-- ANDROID ICON -->
+    <link href="../pics/android-icons/icon-hires-192x192.png" rel="icon" sizes="192x192" />
+    <link href="../pics/android-icons/icon-normal-128x128.png" rel="icon" sizes="128x128" />
+
+    <!-- -->
+    <!-- RESET CSS -->
+    <link href="../css/css_reset.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- BOOTSTRAP -->
+
+    <!-- STANDARD CSS -->
+    <link href="../css/form.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
+    
+    <!-- FORMCSS
+    <link href="../css/form.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
+     -->
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <!-- SCREENS <= 480px  -->
+    <link href="../css/smartphone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+
 </head>
 
 <body>
-    <!-- Bara ett litet test av länkar -->
-    <h2>Referenser (testimonials)</h2>
-    <div id="noId">
-        <ul>
-            <li><a id="home" href="../index.html">START</a></li>
-            <li><a id="about" href="about.html">OM</a></li>
-            <li><a id="testimonials" href="testimonials.html">REFERENSER</a></li>
-            <li><a id="pricing" href="pricing.html">PRODUKTER</a></li>
-            <li><a id "contact" href="contact.html">KONTAKT</a></li>
-        </ul>
+    <header class="mob-header">
+        <div class="logo">
+            <h1>nuFLOW</h1></div>
+        <button>MENY</button>
+    </header>
+    <nav class="mobile">
+        <div>
+            <ul>
+                <li><a id="home" class="" href="../index.html">START</a></li>
+                <li><a id="about" class="" href="about.html">OM</a></li>
+                <li><a id="customers" class="" href="customers.html">REFERENSER</a></li>
+                <li><a id="products" class="" href="products.html">PRODUKTER</a>
+                    <ul>
+                        <li><a href="#budget">Budget</a></li>
+                        <li><a href="#standard">Standard</a></li>
+                        <li><a href="#deluxe">DeLuxe</a></li>
+                        <li><a href="#superdeluxe">Super DeLuxe</a></li>
+                        <li><a href="#sdeluxe">Super DeLuxe</a></li>
+                    </ul>
+                </li>
+                <li><a id="contact" class="active" href="contact.html">KONTAKT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--MOBILE NAV ENDS HERE -->
+
+    <nav class="scrollclass">
+        <div class="navigation">
+            <ul>
+                <li><a id="home" class="" href="../index.html">START</a></li>
+                <li><a id="about" class="" href="about.html">OM</a></li>
+                <li><a id="customers" class="" href="customers.html">REFERENSER</a></li>
+                <li><a id="products" class="" href="products.html">PRODUKTER</a>
+                    <ul>
+                        <li><a href="#budget">Budget</a></li>
+                        <li><a href="#standard">Standard</a></li>
+                        <li><a href="#deluxe">DeLuxe</a></li>
+                        <li><a href="#sdeluxe">Super DeLuxe</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a id="contact" class="active" href="#">KONTAKT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR ENDS HERE -->
+    <!--MAIN SECTION-->
+    <div id="main-holder">
+        <section id="budget">
+            <div class="container">
+                <div class="section group">
+                    <div class="row">
+                        <h1>BUDGET</h1></div>
+                    <div class="col span_1_of_4">
+                        <div class="img-holder"><img class="img-circle image-box" src="../pics/customers/1.png"></img>
+                            <div class="prod-description">
+                                <p>Bacon ipsum dolor amet tongue leberkas ham hock, beef ribs capicola chicken tri-tip kevin pig pancetta flank sirloin bresaola ham. Hamburger cupim chuck bacon venison sausage pig. Bacon strip steak filet mignon shankle.
+                                    Shankle shoulder corned beef, boudin turducken pastrami pork chop short loin chicken frankfurter filet mignon kevin doner tenderloin swine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_4 ">
+                        <div class="img-holder "><img class="img-circle image-box" src="../pics/customers/2.png"></img>
+                            <p>ra1d-ruta2</p>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_4 ">
+                        <div class="img-holdert"><img class="img-circle image-box" src="../pics/customers/3.png"></img>
+                            <div class="prod-descripion">
+                                <div class="prod-descripion">
+                                    <p>ra1d-ruta3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col span_1_of_4">
+                        <div class="img-holder"><img class="img-circle image-box" src="../pics/customers/4.png"></img>
+                            <div class="prod-descripion">
+                                <p>ra1d-ruta4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SECTION GROUP ENDS HERE -->
+            </div>
+            <!-- SECTION STANDARDPIPOR ENDS HERE -->
+        </section>
+        <!-- SECTION ENDS HERE -->
+
+                </div>
+            </div>
     </div>
-    <!-- test av länkar slutar här -->
+    </div>
+    </section>
+    </div>
+    <!--MAIN UI ENDS HERE -->
+    <footer>
+        <div class="container">
+            <!--SOCIAL SECTION-->
+            <section id="social-section">
+                <div class="scl">
+                    <h4>FACEBOOK</h4>
+                    <p><a href="#"><i class="fa fa-facebook fa-3x"></i></a></p>
+                </div>
+                <div class="scl">
+                    <h4>TWITTER</h4>
+                    <p><a href="#"><i class="fa fa-twitter fa-3x"></i></a></p>
+                </div>
+                <div class="scl">
+                    <h4>GOOGLE +</h4>
+                    <p><a href="#"><i class="fa fa-google-plus fa-3x"></i></a></p>
+                </div>
+            </section>
+            <!--END SOCIAL SECTION-->
+            <div id="footer-content">&copy 2015 www.nuFlow.com | All Right Reserved </div>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript " src="../js/contact.js "></script>
+    <script type="text/javascript " src="../js/custom.js "></script>
 </body>
 
 </html>

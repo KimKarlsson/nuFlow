@@ -35,6 +35,8 @@
     <!-- STANDARD CSS -->
     <link href="../css/form.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
     <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
+    <!-- FORMCSS -->
+    <link href="../css/form.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
     <!-- FONTAWESOME STYLE CSS -->
     <link href="../css/font-awesome.min.css" rel="stylesheet" />
     <!-- GOOGLE FONTS -->
@@ -101,17 +103,44 @@
             <div class="container">
                 <div class="section group">
                     <div class="row">
-                        <h1>BUDGET</h1></div>
+                        <h1>kontaktformulär</h1></div>
                     <div class="col span_1_of_4">
-                        <!-- FOROM GOES HERE -->
-                        <!--   ***** --->
-                        <!--   ***** --->
-                        <!--   ***** --->
-                        <!--   ***** --->
-                        <!--   ***** --->
-                        <!--   ***** --->
-                        <!--   ***** --->
-
+                        <form id="inmat">
+                            <div>
+                                <label for="form_name">Namn:</label>
+                                <input type="text" id="form_name" name="name" />
+                                <span class="error">Detta fält får inte vara tomt</span>
+                            </div>
+                            <div>
+                                <label for="form_email">E-post:</label>
+                                <input type="email" id="form_email" name="email" />
+                                <span class="error">Skriv en giltig e-postadress</span>
+                            </div>
+                            <div>
+                                <label for="form_mess">Meddelande: </label>
+                                <textarea type="text" id="form_mess" name="mess"></textarea>
+                                <span class="error">Skriv ett meddelande</span>
+                            </div>
+                            <div>
+                                <button class="btn" id="contact" data-popup-open="popup-1" href="#">Skicka</button>
+                            </div>
+                        </form>
+                        <form id="form" method="post" action="https://baconipsum.com/">
+                            <!--öpnnar popup -->
+                            <div id="popupLogin" class="popup" data-popup="popup-1">
+                                <!--döljer pop -->
+                                <div class="popup-inner">
+                                    <h2>Stämmer dina uppgifter?</h2>
+                                    <p> <span>Namn: </span><span id="name"></span></p>
+                                    <p> <span>e-post: </span><span id="email"></span></p>
+                                    <p> <span>Meddelande: </span><span id="mess"></span></p>
+                                    <p><a id="popclose" data-popup-close="popup-1" href="#">Ändra</a></p>
+                                    <div id="form_submit">
+                                        <button class="sub-button" type="submit">Godkänn</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
