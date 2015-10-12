@@ -3,7 +3,7 @@ $(document).ready(function() {
     var myEmail = "";
     var myMess = "";
     //Name
-    $("#form_name").on("input", function() {
+    $("#form_name").blur("input", function() {
         var input = $(this);
         //----------------------- få värde
         var myNewName = $(this).val();
@@ -38,7 +38,7 @@ $(document).ready(function() {
         }
     });
     // Message 
-    $("#form_mess").keyup(function(event) {
+    $("#form_mess").on(function(event) {
         var input = $(this);
         //---------------få värde
         var myNewMess = $(this).val();

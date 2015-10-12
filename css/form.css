@@ -1,3 +1,66 @@
+/*
+!!!!!!!!!!!!!! +++ OBS!! ++ !!!!!!!!!!!!!!!!!!!!!!!!;
+LAGT TILL CSS FORMSTYLING TA BORT OM DET EJ FUNKAR
+*/
+
+prod-form {
+    float: left;
+    margin-left: 15px;
+    width: 100%;
+    float: left;
+}
+
+.form p {
+    margin: 10px;
+}
+
+.blank-form-row {
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 9px;
+    border: solid 1px ORANGE;
+    outline: 0;
+    font-family: 'Questrial', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    width: 200px;
+    background: #FFFFFF url(image_1.png) left top repeat-x;
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+textarea {
+    font-family: 'Questrial', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    width: 100%;
+    max-width: 100%;
+    line-height: 150%;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border-color: gray;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+}
+
+.form label {
+    font-size: 1.0em;
+    font-family: 'Questrial', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    margin-left: 10px;
+    padding: 4px 4px 4px 4px;
+    /*top, right, bottom left */
+    color: #121212;
+}
+
+
+/* CSS FORMSTYLING SLUT*/
+
+
 /*inte visa error*/
 
 .error {
@@ -116,6 +179,33 @@ button {
     text-decoration: none;
     z-index: 99;
     position: relative;
+}
+
+button:hover {
+    text-decoration: none;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+
+/*FORMULÄRKNAPPAR*/
+
+
+/*============= få fram knappen igen==================*/
+
+.showbutton {
+    display: block;
+}
+
+#form_submit.showbutton {
+    display: block;
+}
+
+.btn.showbutton {
+    display: block;
 }
 
 button:hover {

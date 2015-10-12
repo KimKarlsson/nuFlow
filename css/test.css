@@ -89,19 +89,19 @@ label {
     content: "×";
 }
 
-.showbutton{
-    display:block;
-}
-
-#form_submit.showbutton{
+.showbutton {
     display: block;
 }
 
-.btn{
-    display:block;
+#form_submit.showbutton {
+    display: block;
 }
 
-.sub-button  {
+.btn {
+    display: block;
+}
+
+.sub-button {
     border-radius: 15%;
     height: 30px;
     width: 60px;
@@ -124,5 +124,4 @@ button:hover {
 textarea {
     vertical-align: top;
     height: 5em;
-
 }

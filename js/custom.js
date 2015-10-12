@@ -61,12 +61,12 @@ function hasScrolled() {
     // SKROLLAR MAN MER ÄN HEADERN LÄGGER SCRIPTET TILL  .NAVIGATION-UP.
     if (st > lastScrollTop && st > navbarHeight) {
         // SCROLL DOWN
-        $('.nav').removeClass('navigation-down').addClass('navigation-up');
+        $('header, nav').removeClass('navigation-down').addClass('navigation-up');
     }
     else {
         // SKROLL UPP
         if (st + $(window).height() < $(document).height()) {
-            $('.nav').removeClass('navigation-up').addClass('navigation-down');
+            $('header, nav').removeClass('navigation-up').addClass('navigation-down');
         }
     }
     lastScrollTop = st;
@@ -83,8 +83,8 @@ MOBILE JQUERY
 /*$('button').click(
 function () {
     $('.mobile').slideToggle(1000)('slideToggle');
-});*/
-
+});
+*/
 $('.mob-sub').click(
 function () {
     $(this).parent().toggleClass("slideToggle");
