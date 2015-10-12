@@ -7,7 +7,7 @@
     -webkit-font-smoothing: antialiased !important;
   }
   header {
-    height: 40px;
+
     position: fixed;
     top: 0;
     transition: top 0.5s ease-in-out;
@@ -131,7 +131,7 @@
     border-radius: 15%;
     height: 30px;
     width: 60px;
-    margin: 2% 0 0 50%;
+    margin: 2% 0 0 75%;
     /*top, right, bottom, left*/
     box-shadow: 0px 1px 4px #666666;
     font-family: 'Quicksand';
@@ -142,7 +142,6 @@
     position: relative;
   }
   button:hover {
-    border-radius: 15%;
     text-decoration: none;
   }
   .fade-in-holder {

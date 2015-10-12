@@ -89,7 +89,6 @@ label {
     content: "×";
 }
 
-<<<<<<< HEAD
 .showbutton{
     display:block;
 }
@@ -100,10 +99,8 @@ label {
 
 .btn{
     display:block;
-=======
-button {
-    display: block;
 }
+
 .sub-button  {
     border-radius: 15%;
     height: 30px;
@@ -127,5 +124,5 @@ button:hover {
 textarea {
     vertical-align: top;
     height: 5em;
->>>>>>> 607386d4495dcf5f80987b3bf7539123cdfab64d
+
 }
