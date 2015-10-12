@@ -122,7 +122,7 @@ $(document).ready(function() {
             $("#email").text(myEmail);
             $("#pricemodel").text(myPricemodel);
             //----- stäng popup
-            $("#popclose").click(function() {
+            $(".popclose").click(function() {
                 var targeted_popup_class = jQuery(this).attr('data-popup-close');
                 $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
             });

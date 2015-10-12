@@ -3,10 +3,7 @@ STANDARD STYLING STARTS HERE
 */
 
 body {
-<<<<<<< HEAD
-=======
     width: 100%;
->>>>>>> 1b7fb6116e6c3bd6e0689a39e84e34174de43f7d
     font-family: 'Quicksand', Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
@@ -108,8 +105,8 @@ LOGO START
 */
 
 #main-holder {
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 45px;
+    margin-left: 45px;
     /* TOP, RIGHT, BOTTOM, LEFT */
 }
 
