@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>START - nuFlow</title>
+    <title>Produkter - nuFlow</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- JQUERY -->
-    <script type="text/javascript " src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>
+    <!--   <script type="text/javascript " src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script> låg extra här tydligen-->
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="../pics/favicon.png" type="image/x-icon" />
@@ -31,6 +31,9 @@
     <link href="../css/css_reset.css" rel="stylesheet" type="text/css" media="screen">
 
     <!-- STANDARD CSS -->
+    <!-- test css-->
+    <link rel="stylesheet" type="text/css" href="../css/test.css" />
+
     <link href="../css/form.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
     <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen and (min-width:481px)">
     <!-- FONTAWESOME STYLE CSS -->
@@ -49,235 +52,316 @@
 </head>
 
 <body>
-    <header class="mob-header">
-        <div class="logo">
-            <h1>nuFLOW</h1></div>
-        <button>MENY</button>
-    </header>
-    <!--MOBILE NAV STARTS HERE -->
+    <div id="alltiett">
+        <header class="mob-header">
+            <div class="logo">
+                <h1>nuFLOW</h1></div>
+            <button>MENY</button>
+        </header>
+        <!--MOBILE NAV STARTS HERE -->
 
-    <nav class="mobile">
-        <div>
-            <ul>
-                <li><a id="home" class="" href="../index.html">START</a></li>
-                <li><a id="about" class="" href="about.html">OM</a></li>
-                <li><a id="customers" class="" href="customers.html">REFERENSER</a></li>
-                <li><a id="products" class="active" href="#">PRODUKTER</a>
-                    <ul>
-                        <li><a href="#budget">Budget</a></li>
-                        <li><a href="#standard">Standard</a></li>
-                        <li><a href="#deluxe">DeLuxe</a></li>
-                        <li><a href="#superdeluxe">Super DeLuxe</a></li>
-                        <li><a href="#sdeluxe">Super DeLuxe</a></li>
-                    </ul>
-                </li>
-                <li><a id "contact" href="pages/contact.html">KONTAKT</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!--MOBILE NAV ENDS HERE -->
-    <nav>
-        <div class="navigation ">
-            <ul>
-                <li><a id="home" class="" href="../index.html">START</a></li>
-                <li><a id="about" class="" href="about.html">OM</a></li>
-                <li><a id="customers" class="" href="customers.html">REFERENSER</a></li>
-                <li><a id="products" class="active" href="#">PRODUKTER</a>
-                    <ul class="mob-sub">
-                        <li><a href="#budget">Budget</a></li>
-                        <li><a href="#standard">Standard</a></li>
-                        <li><a href="#deluxe">DeLuxe</a></li>
-                        <li><a href="#sdeluxe">Super DeLuxe</a></li>
-                        <li><a href="#order">Köp</a></li>
-                    </ul>
-                </li>
-                <li><a id="contact" href="contact.html">KONTAKT</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- NAVBAR ENDS HERE -->
-    <!--MAIN SECTION-->
-    <div id="main-holder">
-        <section id="budget">
-            <div class="container">
-                <div class="section group">
-                    <div class="row">
-                        <h1>BUDGET</h1></div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-description">
-                                <p>Bacon ipsum dolor amet tongue leberkas ham hock, beef ribs capicola chicken tri-tip kevin pig pancetta flank sirloin bresaola ham. Hamburger cupim chuck bacon venison sausage pig. Bacon strip steak filet mignon shankle.
-                                    Shankle shoulder corned beef, boudin turducken pastrami pork chop short loin chicken frankfurter filet mignon kevin doner tenderloin swine.</p>
+        <nav class="mobile">
+            <div>
+                <ul>
+                    <li><a id="home" class="" href="../index.html">START</a></li>
+                    <li><a id="about" class="" href="about.html">OM</a></li>
+                    <li><a id="customers" class="" href="customers.html">REFERENSER</a></li>
+                    <li><a id="products" class="active" href="#">PRODUKTER</a>
+                        <ul>
+                            <li><a href="#budget">Budget</a></li>
+                            <li><a href="#standard">Standard</a></li>
+                            <li><a href="#deluxe">DeLuxe</a></li>
+                            <li><a href="#superdeluxe">Super DeLuxe</a></li>
+                            <li><a href="#sdeluxe">Super DeLuxe</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pages/contact.html">KONTAKT</a></li>
+                </ul>
+            </div>
+        </nav> -->
+        <!--MOBILE NAV ENDS HERE -->
+        <nav>
+            <div class="navigation ">
+                <ul>
+                    <li><a id="home" class="" href="../index.html">START</a></li>
+                    <li><a id="about" class="" href="about.html">OM</a></li>
+                    <li><a id="customers" class="" href="customers.html">REFERENSER</a></li>
+                    <li><a id="products" class="active" href="#">PRODUKTER</a>
+                        <ul class="mob-sub">
+                            <li><a href="#budget">Budget</a></li>
+                            <li><a href="#standard">Standard</a></li>
+                            <li><a href="#deluxe">DeLuxe</a></li>
+                            <li><a href="#sdeluxe">Super DeLuxe</a></li>
+                            <li><a href="#order">Köp</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">KONTAKT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- NAVBAR ENDS HERE -->
+        <!--MAIN SECTION-->
+        <div id="main-holder">
+            <section id="budget">
+                <div class="container">
+                    <div class="section group">
+                        <div class="row">
+                            <h1>BUDGET</h1></div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <div class="prod-description">
+                                    <p>Bacon ipsum dolor amet tongue leberkas ham hock, beef ribs capicola chicken tri-tip kevin pig pancetta flank sirloin bresaola ham. Hamburger cupim chuck bacon venison sausage pig. Bacon strip steak filet mignon shankle.
+                                        Shankle shoulder corned beef, boudin turducken pastrami pork chop short loin chicken frankfurter filet mignon kevin doner tenderloin swine.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col span_1_of_4 ">
-                        <div class="img-holder "><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <p>ra1d-ruta2</p>
+                        <div class="col span_1_of_4 ">
+                            <div class="img-holder "><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <p>ra1d-ruta2</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col span_1_of_4 ">
-                        <div class="img-holdert"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
+                        <div class="col span_1_of_4 ">
+                            <div class="img-holdert"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
                                 <div class="prod-descripion">
-                                    <p>ra1d-ruta3</p>
+                                    <div class="prod-descripion">
+                                        <p>ra1d-ruta3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <div class="prod-descripion">
+                                    <p>ra1d-ruta4</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
-                                <p>ra1d-ruta4</p>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- SECTION GROUP ENDS HERE -->
                 </div>
-                <!-- SECTION GROUP ENDS HERE -->
-            </div>
-            <!-- SECTION STANDARDPIPOR ENDS HERE -->
-        </section>
-        <!-- SECTION ENDS HERE -->
-        <section id="standard">
-            <div class="container">
-                <div class="section group">
-                    <div class="row">
-                        <h1>STANDARD</h1></div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"> <img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
-                                <p>rad1-ruta1</p>
+                <!-- SECTION STANDARDPIPOR ENDS HERE -->
+            </section>
+            <!-- SECTION ENDS HERE -->
+            <section id="standard">
+                <div class="container">
+                    <div class="section group">
+                        <div class="row">
+                            <h1>STANDARD</h1></div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"> <img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <div class="prod-descripion">
+                                    <p>rad1-ruta1</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <p>rad1-ruta2</p>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <p>rad1-ruta2</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
                                 <div class="prod-descripion">
-                                    <p>rad1-ruta3</p>
+                                    <div class="prod-descripion">
+                                        <p>rad1-ruta3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <div class="prod-descripion">
+                                    <p>rad1-ruta4</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
-                                <p>rad1-ruta4</p>
+                    <!-- SECTION GROUP ENDS HERE -->
+                </div>
+                <!-- CONTAINER ENDS HERE -->
+
+            </section>
+            <!-- SECTION ENDS HERE -->
+
+            <section id="deluxe">
+                <div class="container">
+                    <div class="section group">
+                        <div class="row">
+                            <h1>deLUXE</h1></div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"> <img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <div class="prod-descripion">
+                                    <p>rad3-ruta1</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <p>rad3-ruta2</p>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <div class="prod-descripion">
+                                    <div class="prod-descripion">
+                                        <p>rad3-ruta3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <div class="prod-descripion">
+                                    <p>rad3-ruta4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- SECTION GROUP ENDS HERE -->
+
                 </div>
-                <!-- SECTION GROUP ENDS HERE -->
-            </div>
+
+                <!-- SECTION DELUXEPIPOR ENDS HERE -->
+
+            </section>
+
             <!-- CONTAINER ENDS HERE -->
-        </section>
-        <!-- SECTION ENDS HERE -->
-        <section id="deluxe">
-            <div class="container">
-                <div class="section group">
+
+            </section>
+
+            <!-- SECTION ENDS HERE -->
+
+            <section id="sdeluxe">
+                <div class="container">
                     <div class="row">
-                        <h1>deLUXE</h1></div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"> <img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
-                                <p>rad3-ruta1</p>
+                        <h1>SUPER deLUXE</h1></div>
+                    <div class="section group">
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"> <img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <div class="prod-descripion">
+                                    <p>rad4-ruta1</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <p>rad3-ruta2</p>
-                        </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
                                 <div class="prod-descripion">
-                                    <p>rad3-ruta3</p>
+                                    <p>rad4-ruta2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <div class="prod-descripion">
+                                    <div class="prod-descripion">
+                                        <p>rad4-ruta3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
+                                <div class="prod-descripion">
+                                    <p>rad4-ruta4</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
-                                <p>rad3-ruta4</p>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- SECTION GROUP ENDS HERE -->
                 </div>
-                <!-- SECTION GROUP ENDS HERE -->
-            </div>
-            <!-- SECTION DELUXEPIPOR ENDS HERE -->
-        </section>
-        <!-- CONTAINER ENDS HERE -->
-        </section>
-        <!-- SECTION ENDS HERE -->
-        <section id="sdeluxe">
-            <div class="container">
-                <div class="row">
-                    <h1>SUPER deLUXE</h1></div>
-                <div class="section group">
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"> <img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
-                                <p>rad4-ruta1</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
-                                <p>rad4-ruta2</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
+                <!-- CONTAINER ENDS HERE -->
+            </section>
+            <!-- SECTION ENDS HERE -->
+
+            <section id="order">
+                <div class="container">
+                    <div class="section group">
+                        <div class="row">
+                            <h1>Beställ här</h1></div>
+                        <div class="col span_1_of_4">
+                            <div class="img-holder"> <img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
                                 <div class="prod-descripion">
-                                    <p>rad4-ruta3</p>
+                                    <p>Beställ våra fina pipor via vårt eminenta formulär</p>
+
+
+
+
+
+
+                                    <!--Form-->
+                                    <form id="inmat">
+                                        <div>
+                                            <label for="form_fname">Förnamn:</label>
+                                            <input type="text" id="form_fname" name="fname" />
+                                            <span class="error">Detta fält får inte vara tomt</span>
+                                        </div>
+                                        <div>
+                                            <label for="form_lname">Efternamn:</label>
+                                            <input type="text" id="form_lname" name="lname" />
+                                            <span class="error">Detta fält får inte vara tomt</span>
+                                        </div>
+                                        <div>
+                                            <label for="form_number">Postnummer:</label>
+                                            <input type="text" id="form_number" name="number" />
+                                            <span class="error">Skriv ett giltigt postnummer med 5 siffror</span>
+                                        </div>
+                                        <div>
+                                            <label for="form_email">E-post:</label>
+                                            <input type="email" id="form_email" name="email" />
+                                            <span class="error">Skriv en giltig e-postadress</span>
+                                        </div>
+                                        <div>
+                                            <label for="form_price">Prisnivå:</label>
+                                            <!-- <input type="list" id="form_list" name="list" /> -->
+                                            <select id="form_price" name="price">
+                                                <option value="null" selected>Välj en prismodell</option>
+                                                <option value="low">Låg</option>
+                                                <option value="high">Hög</option>
+                                                <option value="middle">Medel</option>
+                                                <span class="error">null</span>
+                                            </select>
+                                            <!-- <span class="error">Välj en prismodell</span> -->
+                                        </div>
+                                        <div>
+                                            <button class="btn" id="contact" data-popup-open="popup-1" href="#">Genomför köp</button>
+                                        </div>
+                                    </form>
+                                    <form id="form" method="post" action="https://baconipsum.com/">
+                                        <!--öpnnar popup -->
+                                        <div id="popupLogin" class="popup" data-popup="popup-1">
+                                            <!--döljer pop -->
+                                            <div class="popup-inner">
+                                                <h2>Stämmer dina uppgifter?</h2>
+                                                <p> <span>Förnamn: </span><span id="firstname"></span></p>
+                                                <p> <span>Efternamn: </span><span id="secnamn"></span></p>
+                                                <p> <span>Postnummer: </span><span id="zipcode"></span></p>
+                                                <p> <span>e-post: </span><span id="email"></span></p>
+                                                <p> <span>Prismodell: </span><span id="pricemodel"></span></p>
+                                                <p><a class="popclose" id="boxclose" data-popup-close="popup-1" href="#">x</a></p>
+                                                <p><a class="popclose" data-popup-close="popup-1" href="#">Ändra</a></p>
+                                                <div>
+                                                    <button id="form_submit" class="showbutton" type="submit">Godkänn</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <!--Form end -->
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
-                                <p>rad4-ruta4</p>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- SECTION GROUP ENDS HERE -->
                 </div>
-                <!-- SECTION GROUP ENDS HERE -->
-            </div>
-            <!-- CONTAINER ENDS HERE -->
-        </section>
-        <!-- SECTION ENDS HERE -->
-        <section id="order">
-            <div class="container">
-                <div class="section group">
-                    <div class="row">
-                        <h1>Beställ här</h1></div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"> <img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="prod-descripion">
-                                <p>Beställ våra fina pipor via vårt eminenta formulär</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- SECTION GROUP ENDS HERE -->
-            </div>
-            <!-- SECTION DELUXEPIPOR ENDS HERE -->
-        </section>
+                <!-- SECTION DELUXEPIPOR ENDS HERE -->
+            </section>
+        </div>
+        <p><a href="test.html">test form</a></p>
+        <!--MAIN UI ENDS HERE -->
     </div>
-    <!--MAIN UI ENDS HERE -->
+    <!-- alltiett -->
+
     <footer>
         <div class="container">
             <!--SOCIAL SECTION-->
@@ -298,9 +382,10 @@
             <!--END SOCIAL SECTION-->
             <div id="footer-content">&copy 2015 www.nuFlow.com | All Right Reserved </div>
         </div>
-
     </footer>
-    <script type="text/javascript " src="../js/custom.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--   <script type="text/javascript " src="../js/custom.js "></script> -->
+    <script type="text/javascript" src="../js/test.js"></script>
 </body>
 
 </html>

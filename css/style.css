@@ -483,3 +483,17 @@ footer {
 a:hover.back-to-top {
     background: rgba(65, 65, 65, 0.5) url("../css/pics/up-arrow.png") no-repeat center 43%;
 }
+
+
+/*============= få fram knappen igen==================*/
+.showbutton{
+    display:block;
+}
+
+#form_submit.showbutton{
+    display: block;
+} 
+
+.btn.showbutton{
+    display:block;
+}

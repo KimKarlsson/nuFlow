@@ -67,3 +67,15 @@ label {
 #boxclose:before {
     content: "×";
 }
+
+.showbutton{
+    display:block;
+}
+
+#form_submit.showbutton{
+    display: block;
+}
+
+.btn{
+    display:block;
+}

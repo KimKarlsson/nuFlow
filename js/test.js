@@ -77,7 +77,7 @@ $(document).ready(function() {
             input.removeClass("valid").addClass("invalid");
         }
     });
-    $("#form_price").on("mousedown", function() {
+    $("#form_price").on("mouseup", function() {
         var input = $(this);
         //----------------------- få värde
         var varPrice = $(this).val();
@@ -94,6 +94,7 @@ $(document).ready(function() {
             input.removeClass("valid").addClass("invalid");
         }
     });
+    
     //submit
     $("#contact").on("click", function(event) { // testar 
         var form_data = $("#inmat").serializeArray();
@@ -127,7 +128,7 @@ $(document).ready(function() {
                 $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
             });
             //----- öppna popup
-            $("#contact").is(function() {
+             $("#contact").is(function() {
                 var targeted_popup_class = jQuery(this).attr("data-popup-open");
                 $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
             });
