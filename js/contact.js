@@ -82,16 +82,16 @@ $(document).ready(function() {
             $("#mess").text(myMess);
             //----- stäng popup
             $("#popclose").click(function() {
-                var targeted_popup_class = jQuery(this).attr('data-popup-close');
+                var targeted_popup_class = $(this).attr('data-popup-close');
                 $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
             });
             //----- öppna popup
             $("#contact").is(function() {
-                var targeted_popup_class = jQuery(this).attr("data-popup-open");
+                var targeted_popup_class = $(this).attr("data-popup-open");
                 $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
             });
             // return ("No errors: Form will be submitted");
-            console.log(input);
+
         }
     });
 });

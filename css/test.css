@@ -88,10 +88,11 @@ label {
 #boxclose:before {
     content: "×";
 }
-
-button {
+.btn{
     display: block;
+
 }
+
 .sub-button  {
     border-radius: 15%;
     height: 30px;

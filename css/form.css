@@ -18,7 +18,12 @@
 
 input.invalid,
 textarea.invalid {
-    border: 2px solid red;
+    border: 1px solid red;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 
@@ -26,7 +31,12 @@ textarea.invalid {
 
 input.valid,
 textarea.valid {
-    border: 2px solid green;
+    border: 1px solid green;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 
@@ -92,7 +102,8 @@ label {
 button {
     display: block;
 }
-.sub-button  {
+
+.sub-button {
     border-radius: 15%;
     height: 30px;
     width: 60px;
@@ -108,7 +119,6 @@ button {
 }
 
 button:hover {
-    border-radius: 15%;
     text-decoration: none;
 }
 

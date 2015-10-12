@@ -80,10 +80,10 @@ MOBILE JQUERY
 */
 
 /* MOBILMENY KNAPP */
-$('button').click(
+/*$('button').click(
 function () {
     $('.mobile').slideToggle(1000)('slideToggle');
-});
+});*/
 
 $('.mob-sub').click(
 function () {
