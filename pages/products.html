@@ -10,8 +10,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   
+    
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="../pics/favicon.png" type="image/x-icon" />
@@ -306,24 +306,22 @@
                                 <!-- <span class="error">Välj en prismodell</span> -->
                             </div>
                             <div>
-                                <button class="btn" id="contact" data-popup-open="popup-1" href="#">Genomför köp</button>
+                                <button id="furrycontact" class="furryshow" href="#">Genomför köp</button>
                             </div>
                         </form>
-                        <form id="form" method="post" action="https://baconipsum.com/">
+                        <form id="form" method="post" action="https://nuflow-kimkarlsson-1.c9.io/pages/sale.html">
                             <!--öpnnar popup -->
-                            <div id="popupLogin" class="popup" data-popup="popup-1">
-                                <!--döljer pop -->
-                                <div class="popup-inner">
+                            <div id="popupLogin" class="popup">
+                                <div class="overlay">
                                     <h2>Stämmer dina uppgifter?</h2>
                                     <p> <span>Förnamn: </span><span id="firstname"></span></p>
                                     <p> <span>Efternamn: </span><span id="secnamn"></span></p>
                                     <p> <span>Postnummer: </span><span id="zipcode"></span></p>
                                     <p> <span>e-post: </span><span id="email"></span></p>
                                     <p> <span>Prismodell: </span><span id="pricemodel"></span></p>
-                                    <p><a class="popclose" id="boxclose" data-popup-close="popup-1" href="#">x</a></p>
-                                    <p><a class="popclose" data-popup-close="popup-1" href="#">Ändra</a></p>
+                                    <p><a class="close" href="#">Ändra</a></p>
                                     <div>
-                                        <button id="form_submit" class="showbutton" type="submit">Godkänn</button>
+                                        <button class="showbutton" type="submit">Godkänn</button>
                                     </div>
                                 </div>
                             </div>
@@ -359,9 +357,12 @@
         </div>
         </div>
     </footer>
-
+    <!--===javaScript===-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript " src="../js/test.js "></script>
     <script type="text/javascript " src="../js/custom.js "></script>
     <script type="text/javascript" src="../js/contact.js"></script>
+    <!--===javaScriptEnd===-->
 </body>
 
 </html>

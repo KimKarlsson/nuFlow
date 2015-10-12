@@ -96,7 +96,7 @@ $(document).ready(function() {
     });
     
     //submit
-    $("#contact").on("click", function(event) { // testar 
+    $("#furrycontact").on("click", function(event) { // testar 
         var form_data = $("#inmat").serializeArray();
         var error_free = true;
         for (var input in form_data) {
@@ -123,14 +123,11 @@ $(document).ready(function() {
             $("#email").text(myEmail);
             $("#pricemodel").text(myPricemodel);
             //----- stäng popup
-            $(".popclose").click(function() {
-                var targeted_popup_class = jQuery(this).attr('data-popup-close');
-                $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
-            });
-            //----- öppna popup
-             $("#contact").is(function() {
-                var targeted_popup_class = jQuery(this).attr("data-popup-open");
-                $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+            $("#furrycontact").is(function() {
+                $(".popup, overlay").fadeIn(350);
+                $(".close").click(function(e) {
+                    $(".popup, overlay").fadeOut(350);
+                });
             });
             // return ("No errors: Form will be submitted");
         }
