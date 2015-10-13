@@ -4,9 +4,11 @@ $(document).ready(function() {
     var myZip = "";
     var myEmail = "";
     var myPricemodel = "";
+    var myAntal
+    
     //förnamn
     // error vid blankt 
-    $("#form_fname").on("input", function() {
+    $("#form_fname").blur("input", function() {
         var input = $(this);
         //----------------------- få värde
         var varFName = $(this).val();
@@ -23,7 +25,7 @@ $(document).ready(function() {
         }
     });
     //efternamn
-    $("#form_lname").on("input", function() {
+    $("#form_lname").blur("input", function() {
         var input = $(this);
         //----------------------- få värde
         var varSName = $(this).val();
@@ -40,7 +42,7 @@ $(document).ready(function() {
         }
     });
     // postnummer
-    $("#form_number").on("input", function() {
+    $("#form_number").blur("input", function() {
         var input = $(this);
         var re = /\b(\d{5}|\d{3}(-|\s)\d{2}|(SE|se)\d{5}|(SE|se)\d{3}(-|\s)\d{2}|(SE|se)\d{5}|(SE|se)\d{2}(-|\s)\d{3})\b/;
         var is_test = re.test(input.val());
@@ -68,7 +70,7 @@ $(document).ready(function() {
         myEmail = varEmail;
         console.log(myEmail);
         //-------------------------
-        var re = /^[a-zA-Z0-9.!#$%&"*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var re = /^[a-zA-Z0-9.!#$%&"*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; /*a-zåäöÅÄÖ*/
         var is_email = re.test(input.val());
         if (is_email) {
             input.removeClass("invalid").addClass("valid");
@@ -77,7 +79,8 @@ $(document).ready(function() {
             input.removeClass("valid").addClass("invalid");
         }
     });
-    $("#form_price").on("mouseup", function() {
+    $("#form_price").on("mousedown", function() {
+    //$("#form_price").is( function() {
         var input = $(this);
         //----------------------- få värde
         var varPrice = $(this).val();
@@ -86,7 +89,7 @@ $(document).ready(function() {
         console.log(myPricemodel);
         //-------------------------
         var is_price = input.val();
-        is_price = (input.value !== "");
+       // is_price = (input.value !== "");
         if (is_price) {
             input.removeClass("invalid").addClass("valid");
         }
@@ -95,6 +98,24 @@ $(document).ready(function() {
         }
     });
     
+    // antal
+    $("#form_antal").on("input", function() {
+        var input = $(this);
+        var re = /^[a-zA-Z0-9.!#$%&"*+/=?^_`{|}~-]+@[a-zA-Z0-9-]/;
+        var is_test = re.test(input.val());
+        //----------------------- få värde 
+            var varAntal = $(this).val();
+            myAntal = $('#antal');
+            myAntal = varAntal;
+            console.log(myAntal);
+            //-------------------------
+        if (is_test) {
+            input.removeClass("invalid").addClass("valid");
+        }
+        else {
+            input.removeClass("valid").addClass("invalid");
+        }
+    });
     //submit
     $("#furrycontact").on("click", function(event) { // testar 
         var form_data = $("#inmat").serializeArray();
@@ -122,6 +143,7 @@ $(document).ready(function() {
             $("#zipcode").text(myZip);
             $("#email").text(myEmail);
             $("#pricemodel").text(myPricemodel);
+            $("#antal").text(myAntal);
             //----- stäng popup
             $("#furrycontact").is(function() {
                 $(".popup, overlay").fadeIn(350);

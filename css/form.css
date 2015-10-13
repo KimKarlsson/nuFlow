@@ -39,6 +39,10 @@ textarea {
     max-width: 100%;
     line-height: 150%;
 }
+#form_antal{
+    width: 5.4em;
+    text-align: right;
+}
 
 input:hover,
 textarea:hover,
@@ -48,10 +52,10 @@ textarea:focus {
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 }
 
-.form label {
+.form label, select {
     font-size: 1.0em;
     font-family: 'Questrial', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    margin-left: 10px;
+   /* margin-left: 10px;*/
     padding: 4px 4px 4px 4px;
     /*top, right, bottom left */
     color: #121212;

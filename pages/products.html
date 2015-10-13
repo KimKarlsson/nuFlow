@@ -261,15 +261,12 @@
                 <div class="section group">
                     <div class="row">
                         <h1>Beställ här</h1></div>
-                    <div class="col span_1_of_4">
-                        <div class="img-holder"> <img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                        </div>
-                    </div>
-                    <div class="col span_1_of_4">
+                   
+                  <!--  <div class="col span_1_of_4">
                         <div class="prod-descripion">
                             <p>Beställ våra fina pipor via vårt eminenta formulär</p>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="col span_1_of_3">
                         <!--Form-->
                         <form id="inmat">
@@ -294,16 +291,20 @@
                                 <span class="error">Skriv en giltig e-postadress</span>
                             </div>
                             <div>
-                                <label for="form_price">Prisnivå:</label>
+                                <label for="form_price">Välj din modell och antal:</label>
+                                
                                 <!-- <input type="list" id="form_list" name="list" /> -->
                                 <select id="form_price" name="price">
-                                    <option value="null" selected>Välj en prismodell</option>
-                                    <option value="low">Låg</option>
-                                    <option value="high">Hög</option>
-                                    <option value="middle">Medel</option>
+                                    <option value="" selected>Välj din modell</option>
+                                    <option value="budget">Budget</option>
+                                    <option value="standard">Standard</option>
+                                    <option value="delux">DeLuxe</option>
+                                    <option value="superdelux">Super DeLuxe</option>
                                     <span class="error">null</span>
                                 </select>
-                                <!-- <span class="error">Välj en prismodell</span> -->
+                             <!--<label for="form_antal">Antal:</label>-->
+                               <input class="antal" type="text" id="form_antal" name="antal"><span class="error">Välj en prismodell och antal</span></input>
+                             <!--<span class="error">Välj en prismodell och antal</span> -->
                             </div>
                             <div>
                                 <button id="furrycontact" class="furryshow" href="#">Genomför köp</button>
@@ -318,7 +319,8 @@
                                     <p> <span>Efternamn: </span><span id="secnamn"></span></p>
                                     <p> <span>Postnummer: </span><span id="zipcode"></span></p>
                                     <p> <span>e-post: </span><span id="email"></span></p>
-                                    <p> <span>Prismodell: </span><span id="pricemodel"></span></p>
+                                    <p> <span>Modell: </span><span id="pricemodel"></span></p>
+                                    <p> <span>Antal: </span><span id="antal"></span></p>
                                     <p><a class="close" href="#">Ändra</a></p>
                                     <div>
                                         <button class="showbutton" type="submit">Godkänn</button>
