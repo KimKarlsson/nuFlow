@@ -113,7 +113,7 @@ MOBILE JQUERY
 /* MOBILMENY KNAPP */
 $('button.mob-button').click(
     function() {
-        $('.mobile').slideToggle(1000)('slideToggle');
+        $('.mobile').slideDown('slideToggle');
     });
 
 /*$('.mob-sub').click(
@@ -136,7 +136,7 @@ $(function() {
                 'left': 0,
 
             });
-            $('.mobile').toggleClass('slideToggle').hide();
+            $('.mobile').slideUp('slideUp').hide();
             
         }
         else {
