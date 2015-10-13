@@ -4,7 +4,7 @@ $(document).ready(function() {
     var myZip = "";
     var myEmail = "";
     var myPricemodel = "";
-    var myAntal
+    var myAntal ="";
     
     //förnamn
     // error vid blankt 
@@ -99,9 +99,9 @@ $(document).ready(function() {
     });
     
     // antal
-    $("#form_antal").on("input", function() {
+    $("#form_antal").on("blur keyup", function() {
         var input = $(this);
-        var re = /^[a-zA-Z0-9.!#$%&"*+/=?^_`{|}~-]+@[a-zA-Z0-9-]/;
+        var re = /^[0-9]+$/;
         var is_test = re.test(input.val());
         //----------------------- få värde 
             var varAntal = $(this).val();
@@ -116,6 +116,22 @@ $(document).ready(function() {
             input.removeClass("valid").addClass("invalid");
         }
     });
+  /*  $("#form_antal").blur("input", function() {
+        var input = $(this);
+        ///----------------------- få värde 
+            var varAntal = $(this).val();
+            myAntal = $('#antal');
+            myAntal = varAntal;
+            console.log(myAntal);
+            //-------------------------
+        var is_fname = input.val();
+        if (is_fname) {
+            input.removeClass("invalid").addClass("valid");
+        }
+        else {
+            input.removeClass("valid").addClass("invalid");
+        }
+    }); */
     //submit
     $("#furrycontact").on("click", function(event) { // testar 
         var form_data = $("#inmat").serializeArray();
