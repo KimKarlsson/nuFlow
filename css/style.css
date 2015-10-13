@@ -11,15 +11,15 @@ body {
 }
 
 header {
-    z-index: 1000;
     height: 40px;
     position: relative;
     top: 0;
-    transition: top 0.5s ease-in-out;
+    transition: top 0.5s ease-out;
     width: 100%;
 }
 
 .logo > h1 {
+    z-index: 99;
     font-size: 42px;
     font-weight: bold;
     color: orange;
@@ -30,8 +30,69 @@ header {
     width: 85%;
 }
 
+.container-pad-top {
+    padding-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1095px;
+    margin: -40px auto;
+}
+
+#slideshow {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0 0 12px;
+    background: url(images/border.png);
+    overflow: scroll;
+    /*MÖJLIGGÖR SCROLLING OM JAVASCRIPT EJ LADDAS */
+    position: relative;
+    z-index: 1;
+}
+
+#slideshow ul #nav {
+    display: none;
+    list-style: none;
+    position: relative;
+    top: 210px;
+    z-index: 15;
+}
+
+#slideshow ul#nav li#prev {
+    float: left;
+    margin: 0 0 0 40px;
+}
+
+#slideshow ul#nav li#next {
+    float: right;
+    margin: 0 50px 0 0;
+}
+
+#slideshow ul#nav li a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-indent: -9999px;
+}
+
+#slideshow ul#nav li#prev a {
+    background: url(images/prev.png);
+}
+
+#slideshow ul#nav li#next a {
+    background: url(images/next.png);
+}
+
+#slideshow ul#slides {
+    list-style: none;
+}
+
+#slideshow ul#slides li {
+    margin: 0 0 20px 0;
+}
+
+
 .container {
-    width: 90%;
+    width: 85%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -40,20 +101,6 @@ header {
     color: #000;
     font-size: 20px;
     font-weight: bold;
-}
-
-p {
-    font-weight: 400;
-    line-height: 30px;
-    padding-bottom: 20px;
-}
-
-.space-free {
-    height: 100px;
-}
-
-.g-pad-bottom {
-    padding-bottom: 40px;
 }
 
 
@@ -71,30 +118,6 @@ CAROUSELL
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-}
-
-.carousell {
-    height: 100%;
-}
-
-.fadein {
-    position: absolute;
-    width: 50%;
-    height: 35%;
-}
-
-.fadein img {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.text-scroll {
-    margin-right: auto;
-    margin-left: auto;
-    font-family: "Questrial";
-    font-size: 1.0em;
-    width: 150px;
 }
 
 
@@ -118,7 +141,7 @@ NAVIGATION START
 */
 
 nav {
-    z-index: 999;
+
     width: 100%;
     height: 95px;
     background-image: url(/css/pics/textures/bg_header.png);
@@ -133,7 +156,6 @@ nav {
     font-weight: bold;
     margin-right: auto;
     margin-left: auto;
-    width: 85%;
     padding: 50px 0 5px 0;
     /*top right bottom left */
 }
@@ -474,7 +496,7 @@ footer {
     z-index: 999;
     right: 20px;
     bottom: 20px;
-    background: rgba(64, 0, 0, 0.8) url("../css/pics/up-arrow.png") no-repeat center 43%;
+    background: rgba(255, 137, 0, 0.5) url("../css/pics/up-arrow.png") no-repeat center 43%;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 40%;
@@ -486,4 +508,3 @@ a:hover.back-to-top {
 
 
 /*FORMULÄRKNAPPAR*/
-

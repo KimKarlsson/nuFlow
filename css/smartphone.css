@@ -30,6 +30,7 @@
     font-size: 14px;
   }
   .mob-header {
+    width: 100%;
     top: 50px;
     height: 100px;
     background-color: #333;

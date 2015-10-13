@@ -41,7 +41,7 @@ $(this).ready(function() {
 var didScroll;
 var lastScrollTop = 0;
 var downDelta = 200;
-var navbarHeight = $('header, nav.navigation').outerHeight();
+var navbarHeight = $('header, nav').outerHeight();
 $(window).scroll(function(event) {
     didScroll = true;
 });
@@ -61,12 +61,12 @@ function hasScrolled() {
     // SKROLLAR MAN MER ÄN HEADERN LÄGGER SCRIPTET TILL  .NAVIGATION-UP.
     if (st > lastScrollTop && st > navbarHeight) {
         // SCROLL DOWN
-        $('header, nav.navigation').removeClass('navigation-down').addClass('navigation-up');
+        $('header, nav').removeClass('navigation-down').addClass('navigation-up');
     }
     else {
         // SKROLL UPP
         if (st + $(window).height() < $(document).height()) {
-            $('header, nav.navigation').removeClass('navigation-up').addClass('navigation-down');
+            $('header, nav').removeClass('navigation-up').addClass('navigation-down');
         }
     }
     lastScrollTop = st;
@@ -121,7 +121,7 @@ $('button.mob-button').click(
         $(this).parent().toggleClass('slideToggle');
     });
 */
-/* MOBILEVERSION*/
+/* MOBILEVERSION
 $(function() {
     // HÄMTAR TOP OFFSET I MENYN
     var stickyNavTop = $('header, nav.mobile').offset().top;
@@ -136,11 +136,11 @@ $(function() {
                 'left': 0,
 
             });
-            $('nav.mobile').slideUp('slideUp').hide();
+            $('nav.mobile').slideToggle('slideToggle').hide();
             
         }
         else {
-            $('header, nav.mobile').css({
+            $('.mob-header, nav.mobile').css({
                 'position': 'absolute',
                 'top': 0,
             });
@@ -154,3 +154,5 @@ $(function() {
         stickyNav();
     });
 });
+*/
+
