@@ -41,7 +41,7 @@ $(this).ready(function() {
 var didScroll;
 var lastScrollTop = 0;
 var downDelta = 200;
-var navbarHeight = $('header, nav').outerHeight();
+var navbarHeight = $('header, .navigation').outerHeight();
 $(window).scroll(function(event) {
     didScroll = true;
 });
@@ -61,12 +61,12 @@ function hasScrolled() {
     // SKROLLAR MAN MER ÄN HEADERN LÄGGER SCRIPTET TILL  .NAVIGATION-UP.
     if (st > lastScrollTop && st > navbarHeight) {
         // SCROLL DOWN
-        $('header, nav').removeClass('navigation-down').addClass('navigation-up');
+        $('header, .navigation').removeClass('navigation-down').addClass('navigation-up');
     }
     else {
         // SKROLL UPP
         if (st + $(window).height() < $(document).height()) {
-            $('header, nav').removeClass('navigation-up').addClass('navigation-down');
+            $('header, .navigation').removeClass('navigation-up').addClass('navigation-down');
         }
     }
     lastScrollTop = st;
@@ -136,7 +136,7 @@ $(function() {
                 'left': 0,
 
             });
-            $('.mobile').slideUp('slideUp').hide();
+            $('bav.mobile').slideUp('slideUp').hide();
             
         }
         else {

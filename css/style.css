@@ -250,7 +250,7 @@ MOBILENAV
     display: none;
 }
 
-button {
+button.mob-button {
     display: none;
 }
 

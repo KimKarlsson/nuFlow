@@ -221,17 +221,12 @@ FOOTER START
   .footer-content {
     float: right;
   }
-  
-  
-  
   /* 
   =============================================
   CSS FORMSTYLING SLUT
   =============================================*/
-!!!!!!!!!!!!!! +++ OBS!! ++ !!!!!!!!!!!!!!!!!!!!!!!!;
-LAGT TILL CSS FORMSTYLING TA BORT OM DET EJ FUNKAR
-*/
-  prod-form {
+  !!!!!!!!!!!!!! +++ OBS!! ++ !!!!!!!!!!!!!!!!!!!!!!!!;
+  LAGT TILL CSS FORMSTYLING TA BORT OM DET EJ FUNKAR */ prod-form {
     float: left;
     margin-left: 15px;
     width: 100%;
@@ -247,6 +242,10 @@ LAGT TILL CSS FORMSTYLING TA BORT OM DET EJ FUNKAR
   textarea {
     padding: 9px;
     border: solid 1px ORANGE;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     outline: 0;
     font-family: 'Questrial', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     width: 200px;
@@ -283,9 +282,6 @@ LAGT TILL CSS FORMSTYLING TA BORT OM DET EJ FUNKAR
     /*top, right, bottom left */
     color: #121212;
   }
-  
-  
- 
   /*inte visa error*/
   .error {
     display: none;
@@ -382,7 +378,10 @@ LAGT TILL CSS FORMSTYLING TA BORT OM DET EJ FUNKAR
     display: block;
   }
   .sub-button {
-    border-radius: 15%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     height: 30px;
     width: 60px;
     margin: 2% 0 0 50%;
