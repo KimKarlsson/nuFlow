@@ -254,3 +254,9 @@ textarea {
     -moz-transform: rotate(-90deg); 
 
 }
+
+.showbutton {
+    display: block;
+    background-color: orange;
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+}
