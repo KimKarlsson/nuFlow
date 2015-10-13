@@ -81,7 +81,7 @@ $(document).ready(function() {
             $("#email").text(myEmail);
             $("#mess").text(myMess);
             //----- stäng popup
-            $("#popclose").click(function() {
+            $(".popclose").click(function() {
                 var targeted_popup_class = $(this).attr('data-popup-close');
                 $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
             });
@@ -91,7 +91,12 @@ $(document).ready(function() {
                 $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
             });
             // return ("No errors: Form will be submitted");
-
+            /* $("#furrycontact").is(function() {   --==kod från products==-- 
+                $(".popup, overlay").fadeIn(350);
+                $(".close").click(function(e) {
+                    $(".popup, overlay").fadeOut(350);
+                });
+            });*/
         }
     });
 });

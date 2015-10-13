@@ -232,3 +232,25 @@ textarea {
     border-bottom-right-radius: 2px;
     display: block;
 }
+
+#kryss{
+    float:right;
+    margin-top:-270px;
+    margin-right:-55px;
+    cursor:pointer;
+    background-color: orange;
+    color: black;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px;
+    font-size: 31px;
+   /* display: inline-block;*/
+    line-height: 0px;
+    padding: 11px 3px;    
+    text-decoration:none;
+}
+#kryss:hover{
+/*transform: rotate(-90deg);*/
+-webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg); 
+
+}
