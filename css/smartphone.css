@@ -6,9 +6,8 @@
     margin: 0;
     -webkit-font-smoothing: antialiased !important;
   }
-  
   header {
-    position: fixed;
+    position: relative;
     top: 0;
     transition: top 0.5s ease-in-out;
     width: 100%;
@@ -38,9 +37,8 @@
   }
   nav {
     position: fixed;
-    top: 0;
     transition: top 0.5s ease-in-out;
-    width: 100%;
+    width: auto;
   }
   .mobile {
     font-family: 'Quicksand', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -146,9 +144,37 @@
   button:hover {
     text-decoration: none;
   }
+  #main-ui-slider {
+    z-index: -1;
+    z-index: 7777;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #main-holder {
+    z-index: 8888;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 40%;
+    /* TOP, RIGHT, BOTTOM, LEFT */
+  }
+  /*
+=============================================
+IMAGE SLIDER  
+=============================================
+*/
   .fade-in-holder {
-    padding-top: 90px;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  .fadein {
+    z-index: -1;
+    position: relative;
+    height: auto;
+  }
+  .fadein img {
+    position: absolute;
+    left: 0%;
+    top: 0%;
   }
   .row-devider {
     padding: 35px 0 0 0;
@@ -174,6 +200,10 @@
   }
   a:hover.back-to-top {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+  img {
+    max-width: 100%;
+    height: auto;
   }
   .img-circle {
     z-index: -1;
@@ -229,12 +259,11 @@ FOOTER START
   CSS FORMSTYLING SLUT
   =============================================
   !!!!!!!!!!!!!! +++ OBS!! ++ !!!!!!!!!!!!!!!!!!!!!!!!;
-  LAGT TILL CSS FORMSTYLING TA BORT OM DET EJ FUNKAR */ 
+  LAGT TILL CSS FORMSTYLING TA BORT OM DET EJ FUNKAR */
   prod-form {
     float: left;
     margin-left: 15px;
     width: 100%;
-
   }
   .form p {
     margin: 10px;
@@ -276,7 +305,8 @@ FOOTER START
   textarea:focus {
     border-color: gray;
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; ;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+    ;
   }
   .form label,
   select {
@@ -380,7 +410,7 @@ FOOTER START
     content: "×";
   }
   button {
-   display: block;                           
+    display: block;
   }
   .sub-button {
     border-top-left-radius: 5px;
@@ -406,12 +436,10 @@ FOOTER START
     vertical-align: top;
     height: 5em;
   }
-  
-
-/*============borde kunna slå ihop dessa två.. fixa sen=================*/
-.showbutton {
-   /* display: block;*/
-     width: 75px;
+  /*============borde kunna slå ihop dessa två.. fixa sen=================*/
+  .showbutton {
+    /* display: block;*/
+    width: 75px;
     background-color: orange;
     font-family: 'Quicksand', Helvetica, Arial, sans-serif;
     border-radius: 4px;
@@ -419,35 +447,32 @@ FOOTER START
     margin: 10px;
     font-weight: bold;
     background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
- 
-}
-
-.showbutton:active {
-	position: relative;
-	top: 1px;
-}
-.close {
+  }
+  .showbutton:active {
+    position: relative;
+    top: 1px;
+  }
+  .close {
     display: block;
-     width: 75px;
+    width: 75px;
     background-color: orange;
     font-family: 'Quicksand', Helvetica, Arial, sans-serif;
     border-radius: 4px;
     padding: 5px 15px 5px 15px;
     margin: 10px;
     font-weight: bold;
-     background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
-     background: -moz-linear-gradient(top,  #FFA500, #ffc966);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFA500", endColorstr="#ffc966");
-}
-
-.close:active {
-	position: relative;
-	top: 1px;
-}
-/*==Button to open form==*/
-.furryshow {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
+    background: -moz-linear-gradient(top, #FFA500, #ffc966);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFA500", endColorstr="#ffc966");
+  }
+  .close:active {
+    position: relative;
+    top: 1px;
+  }
+  /*==Button to open form==*/
+  .furryshow {
     /*display: block;*/
-    height:30px;
+    height: 30px;
     width: 150px;
     background-color: orange;
     background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
@@ -456,10 +481,9 @@ FOOTER START
     padding: 5px 15px 5px 15px;
     margin: 10px;
     font-weight: bold;
-}
-
-.furryshow:active {
-	position: relative;
-	top: 1px;
-}
+  }
+  .furryshow:active {
+    position: relative;
+    top: 1px;
+  }
 }

@@ -110,17 +110,18 @@ MOBILE JQUERY
 =============================================
 */
 
-/* MOBILMENY KNAPP */
+/* MOBILMENY KNAPP 
 $('button.mob-button').click(
     function() {
-        $('.mobile').slideDown('slideToggle');
-    });
-
-/*$('.mob-sub').click(
-    function() {
-        $(this).parent().toggleClass('slideToggle');
+        $('.mobile').slideDown('open');
     });
 */
+$('button.mob-button').click(
+    function() {
+  $('.mobile').slideToggle('medium');
+  $(this).toggleClass('opened');
+});
+
 /* MOBILEVERSION
 $(function() {
     // HÄMTAR TOP OFFSET I MENYN
@@ -155,12 +156,3 @@ $(function() {
     });
 });
 */
-
-$(function(){
-    $('.fadein img:gt(0)').hide();
-    setInterval(function(){
-      $('.fadein :first-child').fadeOut()
-         .next('img').fadeIn()
-         .end().appendTo('.fadein');}, 
-      3000);
-});
