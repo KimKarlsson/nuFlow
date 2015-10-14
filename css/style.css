@@ -17,6 +17,10 @@ header {
     transition: top 0.5s ease-out;
     width: 100%;
 }
+.clearfix{
+    clear: both;
+    
+}
 .logo {
     width: 150px;
     height: auto;
@@ -439,13 +443,14 @@ FOOTER START
 */
 
 footer {
+     border-top: rgba(0, 0, 0, 0.1) 0px 0px 8px;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     color: #fff;
     padding: 25px 0 45px 0;
     /*top right bottom left */
-    background-image: url(/css/pics/textures/bg_footer.png);
+    background-image: url(../css//pics/textures/mob_nav.png);
 }
 
 .footer-content {

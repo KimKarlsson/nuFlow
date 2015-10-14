@@ -12,6 +12,9 @@
     transition: top 0.5s ease-in-out;
     width: 100%;
   }
+  .clearfix {
+    clear: both;
+  }
   .container {
     max-width: 480px;
   }
@@ -30,13 +33,13 @@
     font-size: 14px;
   }
   .mob-header {
+    background-image: url(../css//pics/textures/mob_nav.png);
     width: 100%;
     top: 50px;
     height: 100px;
     background-color: #333;
   }
   nav {
-    position: fixed;
     transition: top 0.5s ease-in-out;
     width: auto;
   }
@@ -244,12 +247,13 @@ FOOTER START
 =============================================
 */
   footer {
+    border-top: rgba(0, 0, 0, 0.1) 0px 0px 8px;
     margin-right: auto;
     margin-left: auto;
     color: #fff;
     padding: 50px 50px 50px 50px;
     /*top right bottom left */
-    background-color: #333;
+    background-image: url(../css//pics/textures/mob_nav.png);
   }
   .footer-content {
     float: right;
@@ -436,7 +440,9 @@ FOOTER START
     vertical-align: top;
     height: 5em;
   }
-  /*============borde kunna slå ihop dessa två.. fixa sen=================*/
+  /*============
+  borde kunna slå ihop dessa två.. fixa sen
+  =================*/
   .showbutton {
     /* display: block;*/
     width: 75px;

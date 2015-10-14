@@ -110,12 +110,7 @@ MOBILE JQUERY
 =============================================
 */
 
-/* MOBILMENY KNAPP 
-$('button.mob-button').click(
-    function() {
-        $('.mobile').slideDown('open');
-    });
-*/
+/* MOBILMENY KNAPP */
 $('button.mob-button').click(
     function() {
   $('.mobile').slideToggle('medium');
@@ -156,3 +151,17 @@ $(function() {
     });
 });
 */
+
+/*
+FADESLIDER
+*/
+
+
+$(function(){
+    $('.fadein img:gt(0)').hide();
+    setInterval(function(){
+      $('.fadein :first-child').fadeOut()
+         .next('img').fadeIn()
+         .end().appendTo('.fadein');}, 
+      3000);
+});
