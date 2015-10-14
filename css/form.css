@@ -1,6 +1,16 @@
 /*
 !!!!!!!!!!!!!! +++ OBS!! ++ !!!!!!!!!!!!!!!!!!!!!!!!;
 LAGT TILL CSS FORMSTYLING TA BORT OM DET EJ FUNKAR
+funkar fiiint!
+
+        \_\_    _/_/                                                        
+            \__/                                                            
+            (oo)\_______                                                   
+            (__)\       )\/\                                              
+                ||----w |                                                   
+                ||     || 
+ ▲
+▲ ▲
 */
 
 prod-form {
@@ -218,11 +228,21 @@ textarea {
 }
 
 .furryshow {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
     display: block;
+    background-color: orange;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    padding: 5px 15px 5px 15px;
+    margin: 10px;
+    font-weight: bold;
+}
+.furryshow:hover{
+    background: #FFA500;
+}
+.furryshow:active {
+	position: relative;
+	top: 1px;
 }
 
 .btn {
@@ -232,31 +252,41 @@ textarea {
     border-bottom-right-radius: 2px;
     display: block;
 }
-
-#kryss{
-    float:right;
-    margin-top:-270px;
-    margin-right:-55px;
-    cursor:pointer;
-    background-color: orange;
-    color: black;
-    border: 1px solid #AEAEAE;
-    border-radius: 30px;
-    font-size: 31px;
-   /* display: inline-block;*/
-    line-height: 0px;
-    padding: 11px 3px;    
-    text-decoration:none;
-}
-#kryss:hover{
-/*transform: rotate(-90deg);*/
--webkit-transform: rotate(-90deg); 
-    -moz-transform: rotate(-90deg); 
-
-}
-
+/*============borde kunna slå ihop dessa två.. fixa sen=================*/
 .showbutton {
     display: block;
     background-color: orange;
     font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px;
+    font-weight: bold;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
+ 
+}
+.showbutton:hover{
+    background: #FFA500;
+}
+.showbutton:active {
+	position: relative;
+	top: 1px;
+}
+.close {
+    display: block;
+    background-color: orange;
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    padding: 5px 15px 5px 15px;
+    margin: 10px;
+    font-weight: bold;
+     background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
+     background: -moz-linear-gradient(top,  #FFA500, #ffc966);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFA500", endColorstr="#ffc966");
+}
+.close:hover{
+    background: #FFA500;
+}
+.close:active {
+	position: relative;
+	top: 1px;
 }

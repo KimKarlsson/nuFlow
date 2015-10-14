@@ -41,7 +41,7 @@ $(this).ready(function() {
 var didScroll;
 var lastScrollTop = 0;
 var downDelta = 200;
-var navbarHeight = $('header, .navigation').outerHeight();
+var navbarHeight = $('header, nav').outerHeight();
 $(window).scroll(function(event) {
     didScroll = true;
 });
@@ -61,12 +61,12 @@ function hasScrolled() {
     // SKROLLAR MAN MER ÄN HEADERN LÄGGER SCRIPTET TILL  .NAVIGATION-UP.
     if (st > lastScrollTop && st > navbarHeight) {
         // SCROLL DOWN
-        $('header, .navigation').removeClass('navigation-down').addClass('navigation-up');
+        $('header, nav').removeClass('navigation-down').addClass('navigation-up');
     }
     else {
         // SKROLL UPP
         if (st + $(window).height() < $(document).height()) {
-            $('header, .navigation').removeClass('navigation-up').addClass('navigation-down');
+            $('header, nav').removeClass('navigation-up').addClass('navigation-down');
         }
     }
     lastScrollTop = st;
@@ -121,26 +121,26 @@ $('button.mob-button').click(
         $(this).parent().toggleClass('slideToggle');
     });
 */
-/* MOBILEVERSION*/
+/* MOBILEVERSION
 $(function() {
     // HÄMTAR TOP OFFSET I MENYN
-    var stickyNavTop = $('header.mob-header, .mobile').offset().top;
+    var stickyNavTop = $('header, nav.mobile').offset().top;
     // BESTÄMMER OM NAV ÄR FAST ELLER INTE
     var stickyNav = function() {
         var scroll_top = $(window).scrollTop(); // POSITON TILL SIDANS TOPP
         // OM SCROLLING SKER LÄNGER ÄN TILL NAV, FÄST NAV -400PX,
         if (scroll_top > stickyNavTop) {
-            $('header.mob-header, .mobile').css({
+            $('header, nav.mobile').css({
                 'position': 'fixed',
                 'top': -400,
                 'left': 0,
 
             });
-            $('bav.mobile').slideUp('slideUp').hide();
+            $('nav.mobile').slideToggle('slideToggle').hide();
             
         }
         else {
-            $('header.mob-header, .mobile').css({
+            $('.mob-header, nav.mobile').css({
                 'position': 'absolute',
                 'top': 0,
             });
@@ -154,3 +154,5 @@ $(function() {
         stickyNav();
     });
 });
+*/
+

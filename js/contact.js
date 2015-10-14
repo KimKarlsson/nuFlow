@@ -28,7 +28,7 @@ $(document).ready(function() {
         myEmail = myNewEmail;
         console.log(myNewEmail);
         //-------------------------
-        var re =/^[a-zA-Z0-9.!#$%&"*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        var re = /^[a-zA-Z0-9.!#$%&"*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         var is_email = re.test(input.val());
         if (is_email) {
             input.removeClass("invalid").addClass("valid");
@@ -81,17 +81,17 @@ $(document).ready(function() {
             $("#email").text(myEmail);
             $("#mess").text(myMess);
             //----- stäng popup
-          /*  $(".popclose").click(function() {
-                var targeted_popup_class = $(this).attr('data-popup-close');
-                $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
-            });
-            //----- öppna popup
-            $("#contact").is(function() {
-                var targeted_popup_class = $(this).attr("data-popup-open");
-                $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
-            }); */
+            /*  $(".popclose").click(function() {
+                  var targeted_popup_class = $(this).attr('data-popup-close');
+                  $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+              });
+              //----- öppna popup
+              $("#contact").is(function() {
+                  var targeted_popup_class = $(this).attr("data-popup-open");
+                  $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+              }); */
             // return ("No errors: Form will be submitted");
-             $("#furrycontact").is(function() {   
+            $("#furrycontact").is(function() {
                 $(".popup, overlay").fadeIn(350);
                 $(".close").click(function(e) {
                     $(".popup, overlay").fadeOut(350);
@@ -100,15 +100,17 @@ $(document).ready(function() {
         }
     });
 });
+
 $(document).ready(function() {
     var myFirstname = "";
+    console.log(myFirstname);
     var mySecname = "";
     var myZip = "";
     var myEmail = "";
     var myPricemodel = "";
     //förnamn
     // error vid blankt 
-    $("#form_fname").on("input", function() {
+   /* $("#form_fname").on("input", function() {
         var input = $(this);
         //----------------------- få värde
         var varFName = $(this).val();
@@ -123,7 +125,34 @@ $(document).ready(function() {
         else {
             input.removeClass("valid").addClass("invalid");
         }
-    });
+    });*/
+    /*försök att få ut värdet till global var, ur objektet. på ett smidigare sätt. */
+    $("#form_fname").on("input", function() {
+        var input = $(this);
+                console.log(this);
+     //----------------------- få värde
+    //    var varFName = $(this).val();
+   //     myFirstname = $('#firstname');
+  //      myFirstname = varFName;
+ //       console.log(myFirstname);
+//-------------------------------------------------------
+        //-----funkar.. men gör inte så mycket skillnad..
+       //        var is_fname = input.val();
+      //         myFirstname = is_fname;
+     //          is_fname=$('#firstname');
+               //-----------------------lite mindre kod.. 
+                   myFirstname = $('#firstname');
+                   console.log(myFirstname);
+                   myFirstname = input.val();
+                    console.log(myFirstname);
+                   //-----------------------
+        if (myFirstname) {
+            input.removeClass("invalid").addClass("valid");
+        }
+        else {
+            input.removeClass("valid").addClass("invalid");
+        }
+    }); 
     //efternamn
     $("#form_lname").on("input", function() {
         var input = $(this);
@@ -196,7 +225,7 @@ $(document).ready(function() {
             input.removeClass("valid").addClass("invalid");
         }
     });
-    
+
     //submit
     $("#furrycontact").on("click", function(event) { // testar 
         var form_data = $("#inmat").serializeArray();
@@ -235,3 +264,21 @@ $(document).ready(function() {
         }
     });
 });
+
+/*__________†___†_____† GRAVEYARD________†__†_______†__†______†__†___†___†__†_*/ 
+/*utmarkerad kod som ska tas bort.. om allt fungerar*/
+
+
+/*$(document).ready(function() {
+    
+   // A valid json string
+   var someObject = {};
+   someObject.someProperty = "someValue";
+
+   // jsonString now contains a JSON string representation of someObject
+   var jsonString = JSON.stringify(someObject);
+
+   // Will display the string '{"someProperty":"someValue"}'
+   alert(jsonString);
+
+}); */

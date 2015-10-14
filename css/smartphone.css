@@ -30,6 +30,8 @@
     font-size: 14px;
   }
   .mob-header {
+    width: 100%;
+    top: 50px;
     height: 100px;
     background-color: #333;
   }
@@ -224,13 +226,14 @@ FOOTER START
   /* 
   =============================================
   CSS FORMSTYLING SLUT
-  =============================================*/
+  =============================================
   !!!!!!!!!!!!!! +++ OBS!! ++ !!!!!!!!!!!!!!!!!!!!!!!!;
-  LAGT TILL CSS FORMSTYLING TA BORT OM DET EJ FUNKAR */ prod-form {
+  LAGT TILL CSS FORMSTYLING TA BORT OM DET EJ FUNKAR */ 
+  prod-form {
     float: left;
     margin-left: 15px;
     width: 100%;
-    float: left;
+
   }
   .form p {
     margin: 10px;
@@ -272,6 +275,7 @@ FOOTER START
   textarea:focus {
     border-color: gray;
     -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px; ;
   }
   .form label,
   select {
