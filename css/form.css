@@ -30,7 +30,7 @@ prod-form {
 
 input,
 textarea {
-    padding: 9px;
+    padding: 10px;
     border: solid 1px ORANGE;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -38,7 +38,7 @@ textarea {
     border-bottom-right-radius: 5px;
     outline: 0;
     font-family: 'Questrial', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    width: 200px;
+    width: 90%;
     background: #FFFFFF url(image_1.png) left top repeat-x;
     background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
     background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
@@ -222,10 +222,7 @@ button:hover {
     text-decoration: none;
 }
 
-textarea {
-    vertical-align: top;
-    height: 5em;
-}
+
 
 .btn {
     border-top-left-radius: 2px;

@@ -7,7 +7,7 @@
     -webkit-font-smoothing: antialiased !important;
   }
   header {
-
+    padding-bottom: 10px;
     width: 100%;
   }
   .clearfix {
@@ -34,7 +34,6 @@
     background-image: url(../css//pics/textures/mob_nav.png);
     width: 100%;
     top: 50px;
-    height: 100px;
   }
   nav {
     transition: top 0.5s ease-in-out;
@@ -131,7 +130,7 @@
     border-radius: 15%;
     height: 30px;
     width: 60px;
-    margin: 2% 0 0 75%;
+    margin: 5px 0 0 75%;
     /*top, right, bottom, left*/
     box-shadow: 0px 1px 4px #666666;
     font-family: 'Quicksand';
@@ -154,7 +153,7 @@
     z-index: 8888;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 40%;
+    padding-top: 40px;
     /* TOP, RIGHT, BOTTOM, LEFT */
   }
   /*
@@ -274,7 +273,7 @@ FOOTER START
   }
   input,
   textarea {
-    padding: 9px;
+    padding: 10px;
     border: solid 1px ORANGE;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -282,7 +281,7 @@ FOOTER START
     border-bottom-right-radius: 5px;
     outline: 0;
     font-family: 'Questrial', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    width: 200px;
+    width: 90%;
     background: #FFFFFF url(image_1.png) left top repeat-x;
     background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
     background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
@@ -292,7 +291,6 @@ FOOTER START
   }
   textarea {
     font-family: 'Questrial', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    width: 100%;
     max-width: 100%;
     line-height: 150%;
   }

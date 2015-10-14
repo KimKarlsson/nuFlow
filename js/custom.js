@@ -90,7 +90,7 @@ $(function() {
         }
         else {
             $('header, nav').css({
-                'position': 'relative',
+
                 'top': 0,
             });
         }
