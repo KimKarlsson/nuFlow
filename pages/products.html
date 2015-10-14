@@ -113,17 +113,9 @@
                         <h1>BUDGET</h1></div>
                     <div class="col span_1_of_4">
                         <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
-                            <div class="pipe-order">Antal
-                                <select>
-                                    <li>fasdfasd</li>
-                                    <li>fasdfasd</li>
-                                    <li>fasdfasd</li>
-                                    <li>fasdfasd</li>
-                                </select>
-                                <input type="checkbox" name="vehicle" value="Car">
-                            </div>
                             <div class="prod-description">
-                                <p>Bacon ipsum dolor amet tongue leberkas ham hock, beef ribs capicola chicken tri-tip kevintenderloin swine.</p>
+                                <p>Lyx tillgängligt för alla. Denna pipa håller hög klass och elegans.</p>
+                                <p>Prisklass: A</p>
                             </div>
                         </div>
                     </div>
@@ -161,7 +153,8 @@
                     <div class="col span_1_of_4">
                         <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
                             <div class="prod-description">
-                                <p>Bacon ipsum dolor amet tongue leberkas ham hock, beef ribs capicola chicken tri-tip kevintenderloin swine.</p>
+                                <p>En pipa som lever upp till kraven. Nöjer du dig inte med vad som helst så är detta pipan för dig</p>
+                                <p>Prisklass: B</p>
                             </div>
                         </div>
                     </div>
@@ -199,7 +192,8 @@
                     <div class="col span_1_of_4">
                         <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
                             <div class="prod-description">
-                                <p>Bacon ipsum dolor amet tongue leberkas ham hock, beef ribs capicola chicken tri-tip kevintenderloin swine.</p>
+                                <p>Lyx som vissa bara drömmer om. För den som är nogräknad finns det inga altenativ.</p>
+                                <p>Prisklass: C</p>
                             </div>
                         </div>
                     </div>
@@ -237,7 +231,8 @@
                     <div class="col span_1_of_4">
                         <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/sdl-02.jpg"></img>
                             <div class="prod-description">
-                                <p>Bacon ipsum dolor amet tongue leberkas ham hock, beef ribs capicola chicken tri-tip kevintenderloin swine.</p>
+                                <p>Det finns bara en kronjuvel. Letar du efter främsta pipan på marknaden så har du hittat den.</p>
+                                <p>Prisklass: D</p>
                             </div>
                         </div>
                     </div>
@@ -282,27 +277,27 @@
                     <div class="col span_1_of_3">
                         <!--Form-->
                         <form id="inmat">
-                            <div>
+                            <div class="col span_1_of_4 ">
                                 <label for="form_fname">Förnamn:</label>
                                 <input type="text" id="form_fname" name="fname" />
                                 <span class="error">Detta fält får inte vara tomt</span>
                             </div>
-                            <div>
+                            <div  class="col span_1_of_4 ">
                                 <label for="form_lname">Efternamn:</label>
                                 <input type="text" id="form_lname" name="lname" />
                                 <span class="error">Detta fält får inte vara tomt</span>
                             </div>
-                            <div>
+                            <div  class="col span_1_of_4 ">
                                 <label for="form_number">Postnummer:</label>
                                 <input type="text" id="form_number" name="number" />
-                                <span class="error">Skriv ett giltigt postnummer med 5 siffror</span>
+                                <span class="error">Skriv ett giltigt postnummer</span>
                             </div>
-                            <div>
+                            <div class="col span_1_of_4 ">
                                 <label for="form_email">E-post:</label>
                                 <input type="email" id="form_email" name="email" />
                                 <span class="error">Skriv en giltig e-postadress</span>
                             </div>
-                            <div>
+                            <div class="col span_1_of_4 ">
                                 <label for="form_price">Välj din modell och antal:</label>
 
                                 <!-- <input type="list" id="form_list" name="list" /> -->
@@ -314,10 +309,10 @@
                                     <option value="superdelux">Super DeLuxe</option>
                                     <span class="error">null</span>
                                 </select>
-
                                 <!-- <label for="form_antal">Antal:</label>-->
-                                <input class="antal" type="number" id="form_antal" name="antal"><span class="error">Välj en prismodell och antal</span></input>
-                                <!--<span class="error">Välj en prismodell och antal</span> -->
+                                <input class="antal" type="number" id="form_antal" name="antal">
+                                <span class="error">Välj prismodell och antal</span></input>
+                                
 
                             </div>
                             <div>

@@ -508,3 +508,59 @@ a:hover.back-to-top {
 
 
 /*FORMULÄRKNAPPAR*/
+/*============borde kunna slå ihop dessa två.. fixa sen=================*/
+.showbutton {
+    display: block;
+    background-color: orange;
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px;
+    font-weight: bold;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
+ 
+}
+.showbutton:hover{
+    background: #FFA500;
+}
+.showbutton:active {
+	position: relative;
+	top: 1px;
+}
+.close {
+    display: block;
+    background-color: orange;
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    padding: 5px 15px 5px 15px;
+    margin: 10px;
+    font-weight: bold;
+     background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
+     background: -moz-linear-gradient(top,  #FFA500, #ffc966);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFA500", endColorstr="#ffc966");
+}
+.close:hover{
+    background: #FFA500;
+}
+.close:active {
+	position: relative;
+	top: 1px;
+}
+/*==Button to open form==*/
+.furryshow {
+    display: block;
+    background-color: orange;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
+    font-family: 'Quicksand', Helvetica, Arial, sans-serif;
+    border-radius: 4px;
+    padding: 5px 15px 5px 15px;
+    margin: 10px;
+    font-weight: bold;
+}
+.furryshow:hover{
+    background: #FFA500;
+}
+.furryshow:active {
+	position: relative;
+	top: 1px;
+}
