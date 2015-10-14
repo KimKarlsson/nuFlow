@@ -90,7 +90,7 @@ $(function() {
         }
         else {
             $('header, nav').css({
-                'position': 'absolute',
+                'position': 'relative',
                 'top': 0,
             });
         }
@@ -156,7 +156,9 @@ $(function() {
 FADESLIDER
 */
 
-
+/* 
+IMAGESWITCHER
+*/
 $(function(){
     $('.fadein img:gt(0)').hide();
     setInterval(function(){

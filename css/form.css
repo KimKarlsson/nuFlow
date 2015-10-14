@@ -234,7 +234,10 @@ textarea {
     border-bottom-right-radius: 2px;
     display: block;
 }
+
+
 /*============borde kunna slå ihop dessa två.. fixa sen=================*/
+
 .showbutton {
     display: block;
     background-color: orange;
@@ -244,15 +247,17 @@ textarea {
     margin: 10px;
     font-weight: bold;
     background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
- 
 }
-.showbutton:hover{
+
+.showbutton:hover {
     background: #FFA500;
 }
+
 .showbutton:active {
-	position: relative;
-	top: 1px;
+    position: relative;
+    top: 1px;
 }
+
 .close {
     display: block;
     background-color: orange;
@@ -261,18 +266,23 @@ textarea {
     padding: 5px 15px 5px 15px;
     margin: 10px;
     font-weight: bold;
-     background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
-     background: -moz-linear-gradient(top,  #FFA500, #ffc966);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFA500", endColorstr="#ffc966");
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFA500), to(#ffc966));
+    background: -moz-linear-gradient(top, #FFA500, #ffc966);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#FFA500", endColorstr="#ffc966");
 }
-.close:hover{
+
+.close:hover {
     background: #FFA500;
 }
+
 .close:active {
-	position: relative;
-	top: 1px;
+    position: relative;
+    top: 1px;
 }
+
+
 /*==Button to open form==*/
+
 .furryshow {
     display: block;
     background-color: orange;
@@ -283,10 +293,12 @@ textarea {
     margin: 10px;
     font-weight: bold;
 }
-.furryshow:hover{
+
+.furryshow:hover {
     background: #FFA500;
 }
+
 .furryshow:active {
-	position: relative;
-	top: 1px;
+    position: relative;
+    top: 1px;
 }

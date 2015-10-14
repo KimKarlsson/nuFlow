@@ -2,6 +2,11 @@
 STANDARD STYLING STARTS HERE
 */
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     width: 100%;
     font-family: 'Quicksand', Helvetica, Arial, sans-serif;
@@ -11,25 +16,25 @@ body {
 }
 
 header {
-    height: 10%;
+    background-image: url(pics/textures/bg_header.png);
+    height: 95px;
     position: relative;
     top: 0;
-    transition: top 0.5s ease-out;
+    transition: top 0.3s ease-in-out;
     width: 100%;
 }
-.clearfix{
+
+.clearfix {
     clear: both;
-    
 }
+
 .logo {
     width: 150px;
     height: auto;
     display: block;
     position: absolute;
     top: 0px;
-    z-index: 9999;
-    background-color: #1099D6;
-    padding: 1rem 0.8rem;
+    z-index: 10000;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -44,6 +49,7 @@ header {
     padding-top: 20px;
     padding-left: 25px;
     width: 85%;
+        transition: top 0.3s ease-in-out;
 }
 
 .container-pad-top {
@@ -72,6 +78,7 @@ header {
     margin-right: auto;
     margin-left: auto;
 }
+
 #index-main-holder {
     z-index: 8888;
     margin-right: auto;
@@ -79,11 +86,12 @@ header {
     padding-top: 40%;
     /* TOP, RIGHT, BOTTOM, LEFT */
 }
+
 #main-holder {
     z-index: 8888;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 40px;
+    padding: 40px 0 120px 0;
     /* TOP, RIGHT, BOTTOM, LEFT */
 }
 
@@ -96,12 +104,10 @@ NAVIGATION START
 
 nav {
     width: 100%;
-    background-image: url(/css/pics/textures/bg_header.png);
-    /*border-top: 1px solid #666;*/
     z-index: 9999;
     position: fixed;
     top: 0;
-    transition: top 0.5s ease-in-out;
+    transition: top 0.3s ease-in-out;
 }
 
 .navigation {
@@ -138,7 +144,9 @@ nav {
     text-decoration: none;
     color: #aaaaaa;
 }
-
+.navigation > ul > li > a.active{
+    color: #FFF;
+}
 .navigation > ul > li > a:hover {
     background: rgba(252, 0, 0, 0.0);
     color: #FFF;
@@ -244,7 +252,6 @@ IMAGE SLIDER
 .fadein {
     z-index: -1;
     position: relative;
-
 }
 
 .fadein img {
@@ -363,7 +370,6 @@ img {
     height: auto;
 }
 
-
 .img-circle {
     z-index: -1;
     height: 100%;
@@ -443,14 +449,19 @@ FOOTER START
 */
 
 footer {
-     border-top: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     color: #fff;
     padding: 25px 0 45px 0;
     /*top right bottom left */
+    border-top: 2px solid #FFF;
     background-image: url(../css//pics/textures/mob_nav.png);
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.32);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.32);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.32);
 }
 
 .footer-content {
