@@ -80,8 +80,7 @@ header {
 }
 
 #main-ui-slider {
-    z-index: -1;
-    z-index: 7777;
+
     margin-right: auto;
     margin-left: auto;
 }
@@ -580,11 +579,6 @@ a:hover.back-to-top {
     top: 1px;
 }
 
-<<<<<<< HEAD
-#map {
-    width: 500px;
-    height: 400px;
-=======
 
 /*============byta bild på produkter===========*/
 .wrapper {

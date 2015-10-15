@@ -10,11 +10,20 @@
     padding-bottom: 10px;
     width: 100%;
   }
+  .logo{
+
+    background-image: url(../pics/nuflow_logo.png) no-repeat;
+  }
   .clearfix {
     clear: both;
   }
   .container {
     max-width: 480px;
+  }
+  .container-cust {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
   }
   a {
     text-decoration: none;
@@ -149,13 +158,20 @@
     margin-right: auto;
     margin-left: auto;
   }
- 
   #main-holder {
     z-index: 8888;
     margin-right: auto;
     margin-left: auto;
     padding-top: 40px;
     /* TOP, RIGHT, BOTTOM, LEFT */
+  }
+  footer #social-section > .scl > .social-text {
+    display: none;
+  }
+  .fa {
+    text-align: center;
+    float: left;
+    padding-right: 35px;
   }
   /*
 =============================================
@@ -244,15 +260,19 @@ FOOTER START
 =============================================
 */
   footer {
+    position: fixed;
+    bottom: 0;
     border-top: rgba(0, 0, 0, 0.1) 0px 0px 8px;
     margin-right: auto;
     margin-left: auto;
     color: #fff;
-    padding: 50px 50px 50px 50px;
+    padding: 20px 50px 0px 50px;
     /*top right bottom left */
     background-image: url(../css//pics/textures/mob_nav.png);
   }
-  .footer-content {
+  #footer-content {
+    font-size: 0.8em;
+    padding-bottom: 25px;
     float: right;
   }
   /* 
@@ -473,7 +493,7 @@ FOOTER START
   }
   /*==Button to open form==*/
   .furryshow {
-     z-index: 0;
+    z-index: 0;
     /*display: block;*/
     height: 30px;
     width: 150px;

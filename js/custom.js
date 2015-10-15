@@ -1,4 +1,3 @@
-
 /* ANKARSKROLL*/
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
@@ -74,35 +73,6 @@ function hasScrolled() {
 }
 
 
-/* WEBFUNKTION*/
-$(function() {
-    // HÄMTAR TOP OFFSET I MENYN
-    var stickyNavTop = $('header, nav').offset().top;
-    // BESTÄMMER OM NAV ÄR FAST ELLER INTE
-    var stickyNav = function() {
-        var scroll_top = $(window).scrollTop(); // POSITON TILL SIDANS TOPP
-        // OM SCROLLING SKER LÄNGER ÄN TILL NAV, FÄST NAV -50PX,
-        if (scroll_top > stickyNavTop) {
-            $('header, nav').css({
-                'position': 'fixed',
-                'top': -50,
-                'left': 0,
-            });
-        }
-        else {
-            $('header, nav').css({
-                'top': 0,
-            });
-        }
-    };
-    // STARTAR FUNKTIONEN
-    stickyNav();
-
-    // OCH KÖR VID VARJE SCROLLNING
-    $(window).scroll(function() {
-        stickyNav();
-    });
-});
 
 /*
 =============================================
@@ -117,41 +87,42 @@ $('button.mob-button').click(
         $(this).toggleClass('opened');
     });
 
-/* MOBILEVERSION
 $(function() {
-    // HÄMTAR TOP OFFSET I MENYN
-    var stickyNavTop = $('header, nav.mobile').offset().top;
-    // BESTÄMMER OM NAV ÄR FAST ELLER INTE
-    var stickyNav = function() {
-        var scroll_top = $(window).scrollTop(); // POSITON TILL SIDANS TOPP
-        // OM SCROLLING SKER LÄNGER ÄN TILL NAV, FÄST NAV -400PX,
-        if (scroll_top > stickyNavTop) {
-            $('header, nav.mobile').css({
-                'position': 'fixed',
-                'top': -400,
-                'left': 0,
 
+    // grab the initial top offset of the navigation 
+    var stickyNavTop = $('nav').offset().top;
+
+    // our function that decides weather the navigation bar should have "fixed" css position or not.
+    var stickyNav = function() {
+        var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+
+        // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+        // otherwise change it back to relative
+        if (scroll_top > stickyNavTop) {
+            $('header,nav').css({
+                'position': 'fixed',
+                'top': -50,
+                'left': 0
             });
-            $('nav.mobile').slideToggle('slideToggle').hide();
-            
         }
         else {
-            $('.mob-header, nav.mobile').css({
-                'position': 'absolute',
+            $('header, nav').css({
                 'top': 0,
+
             });
         }
+
     };
-    // STARTAR FUNKTIONEN
+
+    // run our function on load
     stickyNav();
 
-    // OCH KÖR VID VARJE SCROLLNING
+    // and run it again every time you scroll
     $(window).scroll(function() {
         stickyNav();
     });
-});
-*/
 
+});
 /*
 FADESLIDER
 */
