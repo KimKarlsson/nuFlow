@@ -1643,3 +1643,22 @@
 .fa-plus-square-o:before {
     content: "\f196";
 }
+
+/*------------------------GRAVEYARD---------------------------*/
+/*efter längre tid än jag vill erkänna och många försök att flytta ner texten*/
+/*=============-----------använde samma css som till style css för att flytta ner texten-----------=============*/
+/*utrymme till att anpassa för mobil. krockar med browsersidan och texten försvinner helt ist..*/
+/*#main-ui-slider {
+    z-index: -1;
+    z-index: 7777;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10%;
+}
+
+#index-main-holder {
+    z-index: 8888;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 80%;
+} */

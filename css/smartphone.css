@@ -149,6 +149,7 @@
     margin-right: auto;
     margin-left: auto;
   }
+ 
   #main-holder {
     z-index: 8888;
     margin-right: auto;
@@ -472,6 +473,7 @@ FOOTER START
   }
   /*==Button to open form==*/
   .furryshow {
+     z-index: 0;
     /*display: block;*/
     height: 30px;
     width: 150px;

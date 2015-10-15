@@ -28,6 +28,7 @@ header {
     clear: both;
 }
 
+
 .logo {
     width: 150px;
     height: auto;
@@ -64,6 +65,7 @@ header {
     width: 85%;
     margin-right: auto;
     margin-left: auto;
+    margin-top: auto;
 }
 
 .row > h1 {
@@ -77,6 +79,7 @@ header {
     z-index: 7777;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 15%;
 }
 
 #index-main-holder {
