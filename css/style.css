@@ -28,7 +28,6 @@ header {
     clear: both;
 }
 
-
 .logo {
     width: 150px;
     height: auto;
@@ -50,15 +49,14 @@ header {
     padding-top: 20px;
     padding-left: 25px;
     width: 85%;
-        transition: top 0.3s ease-in-out;
+    transition: top 0.3s ease-in-out;
 }
 
 .container-pad-top {
-    padding-top: 10%;
+    top: 0;
     margin-right: auto;
     margin-left: auto;
     width: 85%;
-    margin: -40px auto;
 }
 
 .container {
@@ -66,6 +64,13 @@ header {
     margin-right: auto;
     margin-left: auto;
     margin-top: auto;
+}
+
+.container-cust {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
 }
 
 .row > h1 {
@@ -79,7 +84,6 @@ header {
     z-index: 7777;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 15%;
 }
 
 #index-main-holder {
@@ -91,11 +95,28 @@ header {
 }
 
 #main-holder {
-    z-index: 8888;
+    z-index: 9999;
     margin-right: auto;
     margin-left: auto;
-    padding: 40px 0 145px 0;
+    padding: 0px 0 145px 0;
     /* TOP, RIGHT, BOTTOM, LEFT */
+}
+
+.prod-description > ul > li > h1 {
+    text-indent: 0;
+    font-family: 'Quicksand';
+    font-size: 2.0em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.prod-description > ul > li > h3 {
+    text-indent: 0;
+    font-family: 'Quicksand';
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
 }
 
 
@@ -147,9 +168,11 @@ nav {
     text-decoration: none;
     color: #aaaaaa;
 }
-.navigation > ul > li > a.active{
+
+.navigation > ul > li > a.active {
     color: #FFF;
 }
+
 .navigation > ul > li > a:hover {
     background: rgba(252, 0, 0, 0.0);
     color: #FFF;
@@ -279,10 +302,6 @@ SECTIONS
     clear: both;
     padding: 0px;
     margin: 0px;
-}
-
-#budget {
-    padding-top: 100px;
 }
 
 
@@ -458,7 +477,7 @@ footer {
     margin-right: auto;
     margin-left: auto;
     color: #fff;
-    padding: 25px 0 45px 0;
+    padding: 25px 0 0 0;
     /*top right bottom left */
     border-top: 2px solid #FFF;
     background-image: url(../css//pics/textures/mob_nav.png);
@@ -479,7 +498,7 @@ footer {
     position: fixed;
     z-index: 999;
     right: 20px;
-    bottom: 20px;
+    bottom: 12px;
     background: rgba(255, 137, 0, 0.5) url("../css/pics/up-arrow.png") no-repeat center 43%;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -559,4 +578,9 @@ a:hover.back-to-top {
 .furryshow:active {
     position: relative;
     top: 1px;
+}
+
+#map {
+    width: 500px;
+    height: 400px;
 }

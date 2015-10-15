@@ -41,6 +41,8 @@
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <!-- SCREENS <= 480px  -->
     <link href="../css/smartphone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
 
@@ -99,63 +101,79 @@
 
     <!--MAIN SECTION-->
     <div id="main-holder">
-        <section id="budget">
-            <div class="container">
-                <div class="section group">
-                    <div class="row">
-                        <h1>kontaktformulär</h1></div>
-                    <!-- CONTACT FROM STARTS HERE -->
-                    <div class="col span_1_of_4">
-                        <form id="inmat">
-                            <div>
-                                <label for="form_name">Namn:</label>
-                                <input type="text" id="form_name" name="name" />
-                                <span class="error">Detta fält får inte vara tomt</span>
-                            </div>
-                            <div>
-                                <label for="form_email">E-post:</label>
-                                <input type="email" id="form_email" name="email" />
-                                <span class="error">Skriv en giltig e-postadress</span>
-                            </div>
-                            <div>
-                                <label for="form_mess">Meddelande: </label>
-                                <textarea type="text" id="form_mess" name="mess"></textarea>
-                                <span class="error">Skriv ett meddelande</span>
-                            </div>
-                            <div>
-                                <!-- <button class="btn" id="contact" data-popup-open="popup-1" href="#">Skicka</button> test att byta kod-->
-                                <button id="furrycontact" class="furryshow" href="#">Genomför köp</button>
-                            </div>
-                        </form>
-                        <form id="form" method="post" action="https://nuflow-kimkarlsson-1.c9.io/pages/sale.html">
-                            <!--öpnnar popup -->
-                            <!--  <div id="popupLogin" class="popup" data-popup="popup-1"> test att byta kod-->
-                            <div id="popupLogin" class="popup">
-                                <!--döljer pop -->
-                                <!--  <div class="popup-inner"> test att byta kod-->
-                                <div class="overlay">
-                                    <h2>Stämmer dina uppgifter?</h2>
-                                    <p> <span>Namn: </span><span id="name"></span></p>
-                                    <p> <span>e-post: </span><span id="email"></span></p>
-                                    <p> <span>Meddelande: </span><span id="mess"></span></p>
-                                    <p><a class="close" id="" href="#">Ändra</a></p>
-                                    <p><a class="close" id="kryss" data-popup-close="popup-1" href="#">&#10006;</a></p>
-                                    <!-- <p><a class="close" href="#">&#10006;</a></p> (enhetlig kod från products)-->
-                                    <!--html-kod för kryss=  &#10006; -->
-                                    <!-- <div id="form_submit">-->
-                                    <button>asdf</button>
-                                    <div>
-                                        <!--<button class="sub-button" type="submit">Godkänn</button> test att byta kod-->
-                                        <button class="showbutton" type="submit">Godkänn</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+        <div class="container-cust">
+            <div class="section group">
+                <div class="col span_1_of_4">
+                    <div>
+                        <div class="prod-description">
+                            <ul>
+                                <li>
+                                    <h1>nuFlow AB</h1></li>
+                                <li>
+                                    <h3>Växel: 0733 333 333</h3></li>
+                                <li>
+                                    <h3>Pipsvängen 7</h3></li>
+                                <li>
+                                    <h3>333 33 Skogen</h3></li>
+                                <li>
+                                    <h3>info@nuflow.se</h3></li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
+                <!-- CONTACT FROM STARTS HERE -->
+                <div class="col span_1_of_4">
+                    <div class="row">
+                        <h1>kontaktformulär</h1></div>
+                    <form id="inmat">
+                        <div>
+                            <label for="form_name">Namn:</label>
+                            <input type="text" id="form_name" name="name" />
+                            <span class="error">Detta fält får inte vara tomt</span>
+                        </div>
+                        <div>
+                            <label for="form_email">E-post:</label>
+                            <input type="email" id="form_email" name="email" />
+                            <span class="error">Skriv en giltig e-postadress</span>
+                        </div>
+                        <div>
+                            <label for="form_mess">Meddelande: </label>
+                            <textarea type="text" id="form_mess" name="mess"></textarea>
+                            <span class="error">Skriv ett meddelande</span>
+                        </div>
+                        <div>
+                            <!-- <button class="btn" id="contact" data-popup-open="popup-1" href="#">Skicka</button> test att byta kod-->
+                            <button id="furrycontact" class="furryshow" href="#">Genomför köp</button>
+                        </div>
+                    </form>
+                    <form id="form" method="post" action="https://nuflow-kimkarlsson-1.c9.io/pages/sale.html">
+                        <!--öpnnar popup -->
+                        <!--  <div id="popupLogin" class="popup" data-popup="popup-1"> test att byta kod-->
+                        <div id="popupLogin" class="popup">
+                            <!--döljer pop -->
+                            <!--  <div class="popup-inner"> test att byta kod-->
+                            <div class="overlay">
+                                <h2>Stämmer dina uppgifter?</h2>
+                                <p> <span>Namn: </span><span id="name"></span></p>
+                                <p> <span>e-post: </span><span id="email"></span></p>
+                                <p> <span>Meddelande: </span><span id="mess"></span></p>
+                                <p><a class="close" id="" href="#">Ändra</a></p>
+                                <p><a class="close" id="kryss" data-popup-close="popup-1" href="#">&#10006;</a></p>
+                                <!-- <p><a class="close" href="#">&#10006;</a></p> (enhetlig kod från products)-->
+                                <!--html-kod för kryss=  &#10006; -->
+                                <!-- <div id="form_submit">-->
+                                <button>asdf</button>
+                                <div>
+                                    <!--<button class="sub-button" type="submit">Godkänn</button> test att byta kod-->
+                                    <button class="showbutton" type="submit">Godkänn</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-    </div>
-    </section>
+        </div>
     </div>
     <!--MAIN UI ENDS HERE -->
     <footer>

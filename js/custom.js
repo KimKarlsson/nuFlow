@@ -1,3 +1,4 @@
+
 /* ANKARSKROLL*/
 $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
@@ -90,7 +91,6 @@ $(function() {
         }
         else {
             $('header, nav').css({
-
                 'top': 0,
             });
         }
@@ -113,9 +113,9 @@ MOBILE JQUERY
 /* MOBILMENY KNAPP */
 $('button.mob-button').click(
     function() {
-  $('.mobile').slideToggle('medium');
-  $(this).toggleClass('opened');
-});
+        $('.mobile').slideToggle('medium');
+        $(this).toggleClass('opened');
+    });
 
 /* MOBILEVERSION
 $(function() {
@@ -159,11 +159,14 @@ FADESLIDER
 /* 
 IMAGESWITCHER
 */
-$(function(){
+$(function() {
     $('.fadein img:gt(0)').hide();
-    setInterval(function(){
-      $('.fadein :first-child').fadeOut()
-         .next('img').fadeIn()
-         .end().appendTo('.fadein');}, 
-      3000);
+    setInterval(function() {
+            $('.fadein :first-child').fadeOut()
+                .next('img').fadeIn()
+                .end().appendTo('.fadein');
+        },
+        3000);
 });
+
+/**/
