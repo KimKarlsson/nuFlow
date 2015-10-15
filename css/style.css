@@ -580,7 +580,40 @@ a:hover.back-to-top {
     top: 1px;
 }
 
+<<<<<<< HEAD
 #map {
     width: 500px;
     height: 400px;
+=======
+
+/*============byta bild på produkter===========*/
+.wrapper {
+    width: 75%;
+    position: relative;
+}
+
+.wrapper .thumbnails {
+    width: 15px;
+    float: right;
+}
+
+.wrapper input {
+    display: none;
+} 
+
+.wrapper input:checked + .full-image {
+    display: block;
+}
+
+ .wrapper .full-image {
+    display: none; 
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+.mindre{
+    width: 20em;
+    height: 20em;
+    position: relative;
+>>>>>>> c445647921ca02ac98f563db0cd1846766a7e7d1
 }

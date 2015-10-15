@@ -236,7 +236,8 @@
                     <div class="col span_1_of_4">
                         <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/superdeluxe/superdeluxe-02.jpg" alt="superdeluxe-02" />
                             <div class="prod-description">
-                                <p>Bacon ipsum dolor amet tongue leberkas ham hock, beef ribs capicola chicken tri-tip kevintenderloin swine.</p>
+                                <p>Det finns bara en kronjuvel. Letar du efter främsta pipan på marknaden så har du hittat den.</p>
+                                <p>Prisklass: D</p>
                             </div>
                         </div>
                     </div>
@@ -270,11 +271,11 @@
                         <div class="clearfix"></div>
                         <!--Form-->
                         <form id="inmat" />
-                            <div class="prod-description">
-                                <label for="form_fname">Förnamn:</label>
-                                <input type="text" id="form_fname" name="fname" />
-                                <span class="error">Detta fält får inte vara tomt</span>
-                            </div>
+                        <div class="prod-description">
+                            <label for="form_fname">Förnamn:</label>
+                            <input type="text" id="form_fname" name="fname" />
+                            <span class="error">Detta fält får inte vara tomt</span>
+                        </div>
                     </div>
                     <div class="col span_1_of_4">
                         <div class="clearfix"></div>
@@ -300,94 +301,99 @@
                             <span class="error">Skriv en giltig e-postadress</span>
                         </div>
                     </div>
+                    <!-- SECTION GROUP ENDS HERE -->
                 </div>
-
-                <div class="section group">
-                    <div class="col span_1_of_4">
-                        <div class="clearfix"></div>
-                        <div>
-                            <label for="form_price">Välj din modell och antal:</label>
-                            <!-- <input type="list" id="form_list" name="list" /> -->
-                            <select id="form_price" name="price">
-                                <option value="" selected>Välj din modell</option>
-                                <option value="budget">Budget</option>
-                                <option value="standard">Standard</option>
-                                <option value="delux">DeLuxe</option>
-                                <option value="superdelux">Super DeLuxe</option>
-                                <span class="error">null</span>
-                            </select>
-                            <!-- <label for="form_antal">Antal:</label>-->
-                            <input class="antal" type="text" id="form_antal" name="antal" />
-                            <span class="error">Välj prismodell och antal</span>
-                        </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="clearfix"></div>
-                        <div>
-                            <div>
-                                <button id="furrycontact" class="furryshow" href="#">Genomför köp</button>
-                            </div>
-                        </div>
-                        </form>
-                        <!--FORM ENDS HERE -->
-                    </div>
-                </div>
-                <!-- SECTION GROUP ENDS HERE -->
-                <form id="form" method="post" action="https://nuflow-kimkarlsson-1.c9.io/pages/sale.html">
-                    <!--öpnnar popup -->
-                    <div id="popupLogin" class="popup">
-                        <div class="overlay">
-                            <h2>Stämmer dina uppgifter?</h2>
-                            <p> <span>Förnamn: </span><span id="firstname"></span></p>
-                            <p> <span>Efternamn: </span><span id="secnamn"></span></p>
-                            <p> <span>Postnummer: </span><span id="zipcode"></span></p>
-                            <p> <span>e-post: </span><span id="email"></span></p>
-                            <p> <span>Modell: </span><span id="pricemodel"></span></p>
-                            <p> <span>Antal: </span><span id="antal"></span></p>
-                            <p>
-                                <button type="button" class="close" href="#order">Ändra</button>
-                            </p>
-                            <!-- <p><a class="close" id="kryss"  href="#">&#10006;</a></p> -->
-                            <p>
-                                <button class="showbutton" type="submit">Godkänn</button>
-                            </p>
-
-                        </div>
-                    </div>
-                </form>
-                <!--FORM ENDS HERE -->
             </section>
-            <!-- SECTION ENDS HERE -->
+            <!-- SECTION SUPERDEUXE ENDS HERE -->
+
+            <div class="section group">
+                <div class="col span_1_of_4">
+                    <div class="clearfix"></div>
+                    <div>
+                        <label for="form_price">Välj din modell och antal:</label>
+                        <!-- <input type="list" id="form_list" name="list" /> -->
+                        <select id="form_price" name="price">
+                            <option value="" selected>Välj din modell</option>
+                            <option value="budget">Budget</option>
+                            <option value="standard">Standard</option>
+                            <option value="delux">DeLuxe</option>
+                            <option value="superdelux">Super DeLuxe</option>
+                            <span class="error">null</span>
+                        </select>
+                        <!-- <label for="form_antal">Antal:</label>-->
+                        <input class="antal" type="text" id="form_antal" name="antal" />
+                        <span class="error">Välj prismodell och antal</span>
+                    </div>
+                </div>
+                <div class="col span_1_of_4">
+                    <div class="clearfix"></div>
+                    <div>
+                        <div>
+                            <button id="furrycontact" class="furryshow" href="#">Genomför köp</button>
+                        </div>
+                    </div>
+                    </form>
+                    <!--FORM ENDS HERE -->
+                </div>
+            </div>
+            <!-- SECTION GROUP ENDS HERE -->
+            <form id="form" method="post" action="https://nuflow-kimkarlsson-1.c9.io/pages/sale.html">
+                <!--öpnnar popup -->
+                <div id="popupLogin" class="popup">
+                    <div class="overlay">
+                        <h2>Stämmer dina uppgifter?</h2>
+                        <p> <span>Förnamn: </span><span id="firstname"></span></p>
+                        <p> <span>Efternamn: </span><span id="secnamn"></span></p>
+                        <p> <span>Postnummer: </span><span id="zipcode"></span></p>
+                        <p> <span>e-post: </span><span id="email"></span></p>
+                        <p> <span>Modell: </span><span id="pricemodel"></span></p>
+                        <p> <span>Antal: </span><span id="antal"></span></p>
+                        <p>
+                            <button type="button" class="close" href="#order">Ändra</button>
+                        </p>
+                        <!-- <p><a class="close" id="kryss"  href="#">&#10006;</a></p> -->
+                        <p>
+                            <button class="showbutton" type="submit">Godkänn</button>
+                        </p>
+                    </div>
+                </div>
+            </form>
+            <!--FORM ENDS HERE -->
+
         </div>
         <!-- CONTAINER ENDS HERE -->
     </div>
     <!-- MAIN-HOLDER ENDS HERE -->
-
+    </section>
+    <!-- SECTION ENDS HERE -->
     <footer>
         <div class="container">
             <!--SOCIAL SECTION-->
             <section id="social-section">
                 <div class="scl">
-                    <span class="social-text"><h4>FACEBOOK</h4></span>
+                    <div class="social-text">
+                        <h4>FACEBOOK</h4></div>
                     <p><a href="#"><i class="fa fa-facebook fa-3x"></i></a></p>
                 </div>
                 <div class="scl">
-                    <span class="social-text"><h4>TWITTER</h4></span>
+                    <div class="social-text">
+                        <h4>TWITTER</h4></div>
                     <p><a href="#"><i class="fa fa-twitter fa-3x"></i></a></p>
                 </div>
                 <div class="scl">
-                    <span class="social-text"><h4>GOOGLE +</h4></span>
+                    <div class="social-text">
+                        <h4>GOOGLE +</h4></div>
                     <p><a href="#"><i class="fa fa-google-plus fa-3x"></i></a></p>
                 </div>
             </section>
             <!--END SOCIAL SECTION-->
-            <div id="footer-content">&copy 2015 www.nuFlow.com | All Right Reserved </div>
+            <div id="footer-content">&copy; 2015 www.nuFlow.com | All Right Reserved </div>
         </div>
-        </div>
+    </footer>
     </footer>
     <!--===javaScript===-->
     <!--  <script type="text/javascript" src="../js/test.js"></script> användes bara tillfälligt för att testa valideringsfunktionen-->
-    <script type="text/javascript" src="../js/custom.js "></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
     <script type="text/javascript" src="../js/contact.js"></script>
     <!--===javaScriptEnd===-->
 </body>
