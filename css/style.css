@@ -560,3 +560,35 @@ a:hover.back-to-top {
     position: relative;
     top: 1px;
 }
+
+
+/*============byta bild på produkter===========*/
+.wrapper {
+    width: 75%;
+    position: relative;
+}
+
+.wrapper .thumbnails {
+    width: 15px;
+    float: right;
+}
+
+.wrapper input {
+    display: none;
+} 
+
+.wrapper input:checked + .full-image {
+    display: block;
+}
+
+ .wrapper .full-image {
+    display: none; 
+    position: absolute;
+    top: 0;
+    left: 0;
+} 
+.mindre{
+    width: 20em;
+    height: 20em;
+    position: relative;
+}
