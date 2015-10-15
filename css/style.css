@@ -28,16 +28,6 @@ header {
     clear: both;
 }
 
-.logo {
-    width: 150px;
-    height: auto;
-    display: block;
-    position: absolute;
-    top: 0px;
-    z-index: 10000;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
 
 .logo > h1 {
     z-index: 99;
