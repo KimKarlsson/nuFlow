@@ -10,12 +10,13 @@
     padding-bottom: 10px;
     width: 100%;
   }
- 
   .clearfix {
     clear: both;
   }
   .container {
-    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
   }
   .container-cust {
     width: 85%;
@@ -35,6 +36,15 @@
   .prod-description {
     font-family: "Questrial";
     font-size: 14px;
+  }
+  .logo {
+    height: 5px;
+  }
+  .mob-button {
+    background-color: #000;
+    color: #FFF;
+    height: 40px;
+    width: 60px;
   }
   .mob-header {
     background-image: url(../css//pics/textures/mob_nav.png);
@@ -149,18 +159,36 @@
   button:hover {
     text-decoration: none;
   }
+  #index-main-holder {
+    line-height: 2.0em;
+    z-index: 8888;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    /* TOP, RIGHT, BOTTOM, LEFT */
+  }
+  #index-main-holder h1 {
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Quicksand', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 2.6em;
+  }
+  #index-main-holder p {
+    font-family: 'Questrial', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    color: #000;
+    font-size: 1.3em;
+    padding-bottom: 1.0em;
+  }
   #main-ui-slider {
-    z-index: -1;
     z-index: 7777;
     margin-right: auto;
     margin-left: auto;
   }
   #main-holder {
-    display:block;
     z-index: 8888;
     margin-right: auto;
     margin-left: auto;
-    position: fixed;
+    padding: 0px 0 145px 0;
     padding-top: 40px;
     /* TOP, RIGHT, BOTTOM, LEFT */
   }
@@ -168,9 +196,10 @@
     display: none;
   }
   .fa {
-    text-align: center;
+    margin-left: 35px;
+    margin-right: auto;
     float: left;
-    padding-right: 35px;
+    padding-right: 15px;
   }
   /*
 =============================================
@@ -266,14 +295,14 @@ FOOTER START
     margin-right: auto;
     margin-left: auto;
     color: #fff;
-    padding: 20px 50px 0px 50px;
+    padding: 20px 50px 0px 10px;
     /*top right bottom left */
     background-image: url(../css//pics/textures/mob_nav.png);
   }
   #footer-content {
     font-size: 0.8em;
     padding-bottom: 25px;
-    float: none;
+    float: left;
   }
   /* 
   =============================================

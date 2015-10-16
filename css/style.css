@@ -23,11 +23,13 @@ header {
     transition: top 0.3s ease-in-out;
     width: 100%;
 }
-
+h2{
+    font-size: 1.4em;
+    font-weight: bold;
+}
 .clearfix {
     clear: both;
 }
-
 
 .logo > h1 {
     z-index: 99;
@@ -43,10 +45,11 @@ header {
 }
 
 .container-pad-top {
+    text-align: center;
     top: 0;
     margin-right: auto;
     margin-left: auto;
-    width: 85%;
+
 }
 
 .container {
@@ -57,6 +60,7 @@ header {
 }
 
 .container-cust {
+    padding-bottom: 60px;
     width: 85%;
     margin-right: auto;
     margin-left: auto;
@@ -70,17 +74,32 @@ header {
 }
 
 #main-ui-slider {
-
     margin-right: auto;
     margin-left: auto;
 }
 
 #index-main-holder {
+    padding-top: 10px;
+    line-height: 2.0em;
     z-index: 8888;
+    text-align: center;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 40%;
     /* TOP, RIGHT, BOTTOM, LEFT */
+}
+
+#index-main-holder h1 {
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Quicksand', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 2.6em;
+}
+
+#index-main-holder p {
+    font-family: 'Questrial', "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    color: #000;
+    font-size: 1.3em;
+    padding-bottom: 1.0em;
 }
 
 #main-holder {
@@ -265,13 +284,16 @@ IMAGE SLIDER
 }
 
 .fadein {
+    margin-left: auto;
+    margin-right: auto;
     z-index: -1;
     position: relative;
 }
 
 .fadein img {
-    position: absolute;
-    left: 0%;
+    margin-left: auto;
+    margin-right: auto;
+
     top: 0%;
 }
 
@@ -426,7 +448,7 @@ img {
 
 #social-section {
     float: left;
-    padding-right: 45%;
+    padding-right: 50px;
 }
 
 .scl {
@@ -476,7 +498,7 @@ footer {
 }
 
 .footer-content {
-    padding-left: 50%;
+    padding-left: 10px;
     float: left;
 }
 
@@ -571,6 +593,7 @@ a:hover.back-to-top {
 
 
 /*============byta bild på produkter===========*/
+
 .wrapper {
     width: 75%;
     position: relative;
@@ -583,21 +606,22 @@ a:hover.back-to-top {
 
 .wrapper input {
     display: none;
-} 
+}
 
 .wrapper input:checked + .full-image {
     display: block;
 }
 
- .wrapper .full-image {
-    display: none; 
+.wrapper .full-image {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
-} 
-.mindre{
+}
+
+.mindre {
     width: 20em;
     height: 20em;
     position: relative;
->>>>>>> c445647921ca02ac98f563db0cd1846766a7e7d1
+    >>>>>>> c445647921ca02ac98f563db0cd1846766a7e7d1
 }
