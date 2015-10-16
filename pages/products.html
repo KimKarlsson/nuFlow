@@ -203,8 +203,9 @@
                     <div class="col span_1_of_4">
                         <div class="img-holder"><img class="img-circle image-box" src="../pics/pipes/deluxe/deluxe-02.jpg" alt="deluxe-02" />
                             <div class="prod-description">
- <p>Lyx som vissa bara drömmer om. För den som är nogräknad finns det inga altenativ.</p>
-                                <p>Prisklass: C</p>                            </div>
+                                <p>Lyx som vissa bara drömmer om. För den som är nogräknad finns det inga altenativ.</p>
+                                <p>Prisklass: C</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col span_1_of_4">
@@ -273,40 +274,42 @@
                 <div class="section group">
                     <div class="row">
                         <h2>Beställ här</h2></div>
-                    <div class="col span_1_of_4">
-                        <div class="clearfix"></div>
-                        <!--Form-->
-                        <form id="inmat" />
-                        <div class="prod-description">
-                            <label for="form_fname">Förnamn:</label>
-                            <input type="text" id="form_fname" name="fname" />
-                            <span class="error">Detta fält får inte vara tomt</span>
+                    <form id="inmat">
+                        <div class="col span_1_of_4">
+                            <div class="clearfix"></div>
+                            <!--Form-->
+
+                            <div class="prod-description">
+                                <label for="form_fname">Förnamn:</label>
+                                <input type="text" id="form_fname" name="fname" />
+                                <span class="error">Detta fält får inte vara tomt</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="clearfix"></div>
-                        <div>
-                            <label for="form_lname">Efternamn:</label>
-                            <input type="text" id="form_lname" name="lname" />
-                            <span class="error">Detta fält får inte vara tomt</span>
+                        <div class="col span_1_of_4">
+                            <div class="clearfix"></div>
+                            <div>
+                                <label for="form_lname">Efternamn:</label>
+                                <input type="text" id="form_lname" name="lname" />
+                                <span class="error">Detta fält får inte vara tomt</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="clearfix"></div>
-                        <div>
-                            <label for="form_number">Postnummer:</label>
-                            <input type="text" id="form_number" name="number" />
-                            <span class="error">Skriv ett giltigt postnummer</span>
+                        <div class="col span_1_of_4">
+                            <div class="clearfix"></div>
+                            <div>
+                                <label for="form_number">Postnummer:</label>
+                                <input type="text" id="form_number" name="number" />
+                                <span class="error">Skriv ett giltigt postnummer</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col span_1_of_4">
-                        <div class="clearfix"></div>
-                        <div>
-                            <label for="form_email">E-post:</label>
-                            <input type="email" id="form_email" name="email" />
-                            <span class="error">Skriv en giltig e-postadress</span>
+                        <div class="col span_1_of_4">
+                            <div class="clearfix"></div>
+                            <div>
+                                <label for="form_email">E-post:</label>
+                                <input type="email" id="form_email" name="email" />
+                                <span class="error">Skriv en giltig e-postadress</span>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                     <!-- SECTION GROUP ENDS HERE -->
                 </div>
             </section>
@@ -324,21 +327,21 @@
                             <option value="standard">Standard</option>
                             <option value="delux">DeLuxe</option>
                             <option value="superdelux">Super DeLuxe</option>
-                            <span class="error">null</span>
+                            <!--<span class="error"></span>-->
                         </select>
                         <!-- <label for="form_antal">Antal:</label>-->
                         <input class="antal" type="text" id="form_antal" name="antal" />
                         <span class="error">Välj prismodell och antal</span>
                     </div>
                 </div>
+
                 <div class="col span_1_of_4">
                     <div class="clearfix"></div>
                     <div>
                         <div>
-                            <button id="furrycontact" class="furryshow" href="#">Genomför köp</button>
+                            <button id="furrycontact" class="furryshow">Genomför köp</button>
                         </div>
                     </div>
-                    </form>
                     <!--FORM ENDS HERE -->
                 </div>
             </div>
@@ -355,7 +358,7 @@
                         <p> <span>Modell: </span><span id="pricemodel"></span></p>
                         <p> <span>Antal: </span><span id="antal"></span></p>
                         <p>
-                            <button type="button" class="close" href="#order">Ändra</button>
+                            <button type="button" class="close">Ändra</button>
                         </p>
                         <!-- <p><a class="close" id="kryss"  href="#">&#10006;</a></p> -->
                         <p>
@@ -390,7 +393,7 @@
                         <h4>GOOGLE +</h4></div>
                     <p><a href="#"><i class="fa fa-google-plus fa-3x"></i></a></p>
                 </div>
-                
+
             </section>
             <!--END SOCIAL SECTION-->
             <div id="footer-content">&copy; 2015 www.nuFlow.com | All Right Reserved </div>

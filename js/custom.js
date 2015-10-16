@@ -83,30 +83,26 @@ MOBILE JQUERY
 /* MOBILMENY KNAPP */
 $('button.mob-button').click(
     function() {
-        $('.mobile').slideToggle('medium');
-        $(this).toggleClass('opened');
+        $('.mobile').slideToggle('medium');// HASTIGHETEN PÅ SLIDEDOWN
+        $(this).toggleClass('opened'); // ÖPPNAR OCH STÄNGER MENYN I MOBILLÄGET
     });
 
 $(function() {
 
-    // grab the initial top offset of the navigation 
     var stickyNavTop = $('nav').offset().top;
 
-    // our function that decides weather the navigation bar should have "fixed" css position or not.
     var stickyNav = function() {
-        var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+        var scroll_top = $(window).scrollTop(); 
 
-        // if we've scrolled more than the navigation, change its position to fixed to stick to top,
-        // otherwise change it back to relative
         if (scroll_top > stickyNavTop) {
-            $('header,nav').css({
+            $('header,nav').css({ //LÄGGERT TLL CSS OCH POSITIONERAR MENY -50 PIXAR IFRÅN UTGÅNGSLÄGET
                 'position': 'fixed',
                 'top': -50,
                 'left': 0
             });
         }
         else {
-            $('header, nav').css({
+            $('header, nav').css({ // POSITIONEN FÖR NAVEN EFTER SCROLL
                 'top': 0,
 
             });
@@ -114,10 +110,8 @@ $(function() {
 
     };
 
-    // run our function on load
     stickyNav();
 
-    // and run it again every time you scroll
     $(window).scroll(function() {
         stickyNav();
     });

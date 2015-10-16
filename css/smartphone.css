@@ -40,6 +40,20 @@
   .logo {
     height: 5px;
   }
+  .logo > h1 {
+    text-align:left;
+    z-index: 99;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: orange;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    padding-left: 25px;
+    width: 85%;
+    transition: top 0.3s ease-in-out;
+}
+
   .mob-button {
     background-color: #000;
     color: #FFF;

@@ -6,75 +6,8 @@
     <title>Title</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../css/test.css" />
-
-
 </head>
-
-<body>
-    <h2>Validering</h2>
-    <ul>
-        <li><a href="../index.html">Start</a></li>
-    </ul>
-    <h3>Fyll i din betalningsplan</h3>
-    <h4>OBS, detta är ett påhittad formulär.</h4>
-    <form id="inmat">
-        <div>
-            <label for="form_fname">Förnamn:</label>
-            <input type="text" id="form_fname" name="fname" />
-            <span class="error">Detta fält får inte vara tomt</span>
-        </div>
-        <div>
-            <label for="form_lname">Efternamn:</label>
-            <input type="text" id="form_lname" name="lname" />
-            <span class="error">Detta fält får inte vara tomt</span>
-        </div>
-        <div>
-            <label for="form_number">Postnummer:</label>
-            <input type="text" id="form_number" name="number" />
-            <span class="error">Skriv ett giltigt postnummer med 5 siffror</span>
-        </div>
-        <div>
-            <label for="form_email">E-post:</label>
-            <input type="email" id="form_email" name="email" />
-            <span class="error">Skriv en giltig e-postadress</span>
-        </div>
-        <div>
-            <label for="form_price">Prisnivå:</label>
-            <!-- <input type="list" id="form_list" name="list" /> -->
-            <select id="form_price" name="price">
-                <option value="null" selected>Välj en prismodell</option>
-                <option value="low">Låg</option>
-                <option value="high">Hög</option>
-                <option value="middle">Medel</option>
-                <span class="error">null</span>
-            </select>
-            <!-- <span class="error">Välj en prismodell</span> -->
-        </div>
-        <div>
-            <button class="btn" id="contact" data-popup-open="popup-1" href="#">Genomför köp</button>
-        </div>
-    </form>
-    <form id="form" method="post" action="https://baconipsum.com/">
-        <!--öpnnar popup -->
-        <div id="popupLogin" class="popup" data-popup="popup-1">
-            <!--döljer pop -->
-            <div class="popup-inner">
-                <h2>Stämmer dina uppgifter?</h2>
-                <p> <span>Förnamn: </span><span id="firstname"></span></p>
-                <p> <span>Efternamn: </span><span id="secnamn"></span></p>
-                <p> <span>Postnummer: </span><span id="zipcode"></span></p>
-                <p> <span>e-post: </span><span id="email"></span></p>
-                <p> <span>Prismodell: </span><span id="pricemodel"></span></p>
-                <p><a class="popclose" id="boxclose" data-popup-close="popup-1" href="#">x</a></p>
-                <p><a class="popclose" data-popup-close="popup-1" href="#">Ändra</a></p>
-                <div id="form_submit">
-                    <button type="submit">Godkänn</button>
-                </div>
-            </div>
-        </div>
-    </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-   <!-- <script type="text/javascript" src="../../../js/jquery.js"></script>-->
     <script type="text/javascript" src="../js/test.js"></script> 
 </body>
 
